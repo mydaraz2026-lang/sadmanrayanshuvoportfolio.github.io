@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadman Rayan Shuvo | Sales &amp; Business Development Leader</title>
-    <meta name="description" content="Sales and Business Development Leader with 14+ years building revenue across steel, industrial paints, and e-commerce. Open to roles in Steel, Fintech, FMCG, Telecom, SaaS, and E-commerce.">
+    <title>Sadman Rayan Shuvo | Senior Sales &amp; Business Development Leader — B2B, Channel &amp; Government Accounts</title>
+    <meta name="description" content="Senior Sales and Business Development Leader with 14+ years across enterprise B2B, government tenders, and channel &amp; dealer management in steel, industrial paints, and e-commerce. Open to roles in Steel, Fintech, FMCG, Telecom, SaaS, and E-commerce.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Sadman Rayan Shuvo | Sales &amp; Business Development Leader">
+    <meta property="og:title" content="Sadman Rayan Shuvo | Senior Sales &amp; Business Development Leader — B2B, Channel &amp; Government Accounts">
     <meta property="og:description" content="14+ years building revenue engines across steel, industrial paints, and e-commerce. Open to roles in Steel, Fintech, FMCG, Telecom, SaaS, and E-commerce.">
     <meta property="og:url" content="https://sadman-rayan-shuvo.netlify.app/">
     <meta property="og:image" content="https://sadman-rayan-shuvo.netlify.app/og-image.jpg">
@@ -566,6 +566,61 @@
         .logo-kansai { aspect-ratio: 133 / 100; background-image: var(--logo-kansai); }
         .logo-daraz { aspect-ratio: 225 / 100; background-image: var(--logo-daraz); }
         .btn-cyan-outline.active { background: rgba(56, 189, 248, 0.14); border-color: #38bdf8; color: #e0f2fe; }
+
+        /* ---------- Density pass: tighter cards site-wide ---------- */
+        @media (min-width: 768px) {
+            .card-glass.md\:p-6, .card-glass.md\:p-5, .track-card.md\:p-6 { padding: 1rem 1.1rem; }
+            .gradient-border.md\:p-8 { padding: 1.5rem; }
+        }
+        .card-glass p, .card-glass li, .gradient-border p, .gradient-border li, .skill-tag p, .track-card li { line-height: 1.45; }
+        .track-card ul > li + li { margin-top: 0.375rem; }
+        .skill-tag { padding: 0.65rem 0.9rem !important; }
+        #stack .acc-body > * + * { margin-top: 0.5rem; }
+        /* ---------- Testimonials: plain caption attribution ---------- */
+        .t-caption { font-size: 0.8rem; line-height: 1.45; color: #475569; }
+        .t-caption strong { color: #0f172a; font-weight: 600; }
+        .t-link { font-size: 0.78rem; font-weight: 600; color: #1d4ed8; display: inline-flex; align-items: center; gap: 0.3rem; }
+        .t-link:hover { text-decoration: underline; }
+        @media (min-width: 1024px) { .t-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+        /* ---------- Daraz year-one band ---------- */
+        .yr1-band { display: grid; gap: 1rem; }
+        @media (min-width: 768px) { .yr1-band { grid-template-columns: auto 1fr 1fr; align-items: center; gap: 2rem; } }
+        .yr1-stat { display: flex; align-items: flex-start; gap: 1rem; }
+        @media (min-width: 768px) { .yr1-stat { padding-left: 2rem; border-left: 1px solid rgba(255,255,255,0.08); } }
+        /* ---------- Signature project: result stats ---------- */
+        .sig-stat { border-radius: 0.8rem; padding: 0.8rem 0.9rem; background: rgba(8, 13, 26, 0.55); border: 1px solid rgba(255,255,255,0.08); }
+        .sig-stat .metric-num { font-size: 1.9rem; }
+        .sig-projects li { display: flex; justify-content: space-between; gap: 0.75rem; padding: 0.45rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.8rem; }
+        .sig-projects li:last-child { border-bottom: 0; }
+        .erp-mini { border-top: 1px solid rgba(255,255,255,0.08); }
+        /* ---------- Target role chips ---------- */
+        .role-chip { padding: 0.45rem 0.95rem; border-radius: 999px; font-size: 0.85rem; font-weight: 500; color: #1e293b; background: #fff; border: 1px solid rgba(15,23,42,0.1); }
+        .sec-light .btn-gold-outline { color: #b45309; border-color: rgba(217, 119, 6, 0.7); }
+        .sec-light .btn-gold-outline:hover { color: #92400e; background: rgba(245, 158, 11, 0.1); }
+        .role-chip.new { border-color: rgba(37,99,235,0.45); color: #1d4ed8; background: #eff6ff; }
+
+        /* ---------- Proof strip ---------- */
+        .proof-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem 0.75rem; }
+        @media (min-width: 1024px) { .proof-strip { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; } .proof-item + .proof-item { border-left: 1px solid rgba(15, 23, 42, 0.1); } }
+        .proof-item { text-align: center; padding: 0 0.5rem; }
+        .proof-num { font-size: clamp(1.5rem, 3.2vw, 2.4rem); }
+        .proof-label { margin-top: 0.4rem; font-size: 13px; font-weight: 600; color: #0f172a; line-height: 1.3; }
+        .proof-src { font-size: 12px; color: #475569; margin-top: 0.15rem; }
+        /* ---------- Light sections: amber numbers, readable pills & dividers ---------- */
+        .sec-light .metric-num { background: linear-gradient(180deg, #d97706 0%, #b45309 100%); -webkit-background-clip: text; background-clip: text; color: #b45309; }
+        .sec-light [class~="border-white/[0.08]"] { border-color: rgba(15, 23, 42, 0.1); }
+        .sec-light .yr1-stat { border-color: rgba(15, 23, 42, 0.1); }
+        .sec-light .bg-steel-800 { background: #e8eef7; }
+        .sec-light .bg-blueprint-400\/10 { background: rgba(37, 99, 235, 0.08); }
+        .sec-light.motif-grid::before { background-image: linear-gradient(rgba(37, 99, 235, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(37, 99, 235, 0.05) 1px, transparent 1px); }
+        /* ---------- Readability: minimum 13px for card copy & labels ---------- */
+        .card-glass .text-xs, .skill-tag .text-xs, .sig-stat .text-xs, .acc-body .text-xs, .acc-head + p.text-xs, #stack .acc-head p.text-xs { font-size: 13px; line-height: 1.45; }
+        .flow-label, .lane-tag { font-size: 12px; }
+        .m-group-title { color: #94a3b8 !important; }
+        /* ---------- Tap targets (min 24px) ---------- */
+        .tap24 { min-height: 28px; padding-top: 4px; padding-bottom: 4px; display: inline-flex; align-items: center; }
+        a.tap24.block { display: flex; }
+        .t-link { min-height: 28px; padding: 4px 0; }
     </style>
 </head>
 <body class="font-sans antialiased">
@@ -602,8 +657,8 @@
                         <div class="nav-menu">
                             <div class="nav-menu-panel">
                                 <a href="#philosophy" data-spy="philosophy">Philosophy</a>
-                                <a href="#leadership" data-spy="leadership">Leadership</a>
                                 <a href="#education" data-spy="education">Education</a>
+                                <a href="#leadership" data-spy="leadership">Leadership</a>
                             </div>
                         </div>
                     </div>
@@ -617,7 +672,6 @@
                         <div class="nav-menu">
                             <div class="nav-menu-panel">
                                 <a href="#metrics" data-spy="metrics">Impact</a>
-                                <a href="#proof" data-spy="proof">Proof of Work</a>
                                 <a href="#experience" data-spy="experience">Experience</a>
                                 <a href="#signature-project" data-spy="signature-project">Signature Project</a>
                                 <a href="#recommendations" data-spy="recommendations">Recommendations</a>
@@ -633,9 +687,9 @@
                         </button>
                         <div class="nav-menu">
                             <div class="nav-menu-panel">
-                                <a href="#stack" data-spy="stack">Tech Stack</a>
-                                <a href="#projects" data-spy="projects">Projects</a>
-                                <a href="#research" data-spy="research">Research</a>
+                                <a href="#competencies" data-spy="competencies">Core Competencies</a>
+                                <a href="#stack" data-spy="stack">Certifications</a>
+                                <a href="#beyond" data-spy="beyond">Research &amp; Projects</a>
                             </div>
                         </div>
                     </div>
@@ -662,20 +716,19 @@
 
                 <p class="m-group-title">Profile</p>
                 <a href="#philosophy" data-spy="philosophy" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Philosophy</a>
-                <a href="#leadership" data-spy="leadership" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Leadership</a>
                 <a href="#education" data-spy="education" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Education</a>
+                <a href="#leadership" data-spy="leadership" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Leadership</a>
 
                 <p class="m-group-title">Track Record</p>
                 <a href="#metrics" data-spy="metrics" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Impact</a>
-                <a href="#proof" data-spy="proof" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Proof of Work</a>
                 <a href="#experience" data-spy="experience" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Experience</a>
                 <a href="#signature-project" data-spy="signature-project" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Signature Project</a>
                 <a href="#recommendations" data-spy="recommendations" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Recommendations</a>
 
                 <p class="m-group-title">Capabilities</p>
-                <a href="#stack" data-spy="stack" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Tech Stack</a>
-                <a href="#projects" data-spy="projects" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Projects</a>
-                <a href="#research" data-spy="research" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Research</a>
+                <a href="#competencies" data-spy="competencies" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Core Competencies</a>
+                <a href="#stack" data-spy="stack" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Certifications</a>
+                <a href="#beyond" data-spy="beyond" class="block px-3 py-2 text-steel-300 hover:text-blueprint-400 hover:bg-white/5 rounded-md">Research &amp; Projects</a>
 
                 <div class="grid grid-cols-2 gap-3 pt-4">
                     <a href="#contact" data-spy="contact" class="btn-cyan-outline text-center px-3 py-2.5 rounded-lg text-sm">Contact</a>
@@ -689,7 +742,6 @@
     </nav>
 
 
-    <!-- Hero Section -->
     <section id="hero" class="hero-bg noise relative flex items-center overflow-hidden pt-20 pb-8 lg:pt-[4.5rem] lg:pb-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -701,7 +753,7 @@
                         </div>
                         <div class="min-w-0">
                             <p class="text-white font-semibold">Sadman Rayan Shuvo</p>
-                            <p class="text-steel-300 text-sm">Business Development Team Lead</p>
+                            <p class="text-steel-300 text-sm">Business Development Manager</p>
                             <p class="text-blueprint-400 text-xs mt-0.5">Daraz Bangladesh Ltd. (Alibaba Group)</p>
                         </div>
                     </div>
@@ -711,7 +763,7 @@
                         Available for Sales &amp; Business Development Leadership Roles
                     </div>
 
-                    <p class="hidden sm:block text-blueprint-400 font-semibold text-sm tracking-widest uppercase">Sales &amp; Business Development Leader</p>
+                    <p class="hidden sm:block text-blueprint-400 font-semibold text-sm tracking-widest uppercase">Senior Sales &amp; Business Development Leader <span class="text-steel-400">|</span> Channel, Corporate &amp; Government Accounts</p>
 
                     <h1 class="font-display text-[2.35rem] sm:text-6xl xl:text-7xl font-bold text-white leading-[1.05]">
                         Building Revenue <br>
@@ -719,7 +771,7 @@
                     </h1>
 
                     <p class="text-lg xl:text-xl text-steel-300 max-w-xl leading-relaxed">
-                        <span class="text-white font-semibold">14+ years</span> across enterprise B2B, strategic accounts, business development, digital commerce, and <span class="text-white font-semibold">AI-enabled sales operations</span>.
+                        <span class="text-white font-semibold">14+ years</span> across enterprise B2B, government tenders, channel &amp; dealer management, digital commerce, and <span class="text-white font-semibold">AI-enabled sales operations</span>.
                     </p>
 
                     <p class="hidden sm:block text-sm text-steel-400 max-w-xl">
@@ -747,10 +799,14 @@
                             <svg class="w-5 h-5 text-blueprint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                             Dhaka, Bangladesh
                         </div>
-                        <div class="flex items-center gap-2">
+                        <a href="mailto:sadman.shuvo@yahoo.com" class="tap24 flex items-center gap-2 hover:text-white transition-colors">
                             <svg class="w-5 h-5 text-blueprint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                             sadman.shuvo@yahoo.com
-                        </div>
+                        </a>
+                        <a href="tel:+8801790653537" class="tap24 flex items-center gap-2 hover:text-white transition-colors">
+                            <svg class="w-5 h-5 text-blueprint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            +880 1790-653537
+                        </a>
                     </div>
                 </div>
 
@@ -768,7 +824,7 @@
                                             <span class="text-xs text-steel-400 uppercase tracking-wider">Most Recent Role</span>
                                             <span class="logo logo-daraz sm" role="img" aria-label="Daraz logo"></span>
                                         </div>
-                                        <p class="text-white font-semibold">Business Development Team Lead</p>
+                                        <p class="text-white font-semibold">Business Development Manager</p>
                                         <p class="text-blueprint-400 text-sm">Daraz Bangladesh Ltd. (Alibaba Group)</p>
                                     </div>
                                 </div>
@@ -789,8 +845,148 @@
     </section>
 
 
-    <!-- Impact Metrics Dashboard -->
-    <section id="metrics" class="sec-a motif-grid py-10 md:py-14 relative">
+    <section id="snapshot" class="sec-light sec-tint py-6 md:py-8 relative" aria-label="Career highlights in numbers">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="proof-strip">
+                <div class="proof-item">
+                    <div class="metric-num proof-num"><span class="stat-counter" data-target="73">73</span><span class="metric-suffix">%</span></div>
+                    <p class="proof-label">Regional Growth</p>
+                    <p class="proof-src">Daraz</p>
+                </div>
+                <div class="proof-item">
+                    <div class="metric-num proof-num"><span class="metric-suffix">$</span><span class="stat-counter" data-target="367">367</span><span class="metric-suffix">K</span></div>
+                    <p class="proof-label">Team GMV</p>
+                    <p class="proof-src">Daraz</p>
+                </div>
+                <div class="proof-item">
+                    <div class="metric-num proof-num"><span class="metric-suffix">BDT </span><span class="stat-counter" data-target="50">50</span><span class="metric-suffix">M</span></div>
+                    <p class="proof-label">Largest Single Order</p>
+                    <p class="proof-src">Kansai Nerolac</p>
+                </div>
+                <div class="proof-item">
+                    <div class="metric-num proof-num"><span class="stat-counter" data-target="30">30</span><span class="metric-suffix">%</span></div>
+                    <p class="proof-label">Revenue Growth, Year 1</p>
+                    <p class="proof-src">Kansai Nerolac</p>
+                </div>
+                <div class="proof-item">
+                    <div class="metric-num proof-num"><span class="stat-counter" data-target="95">95</span><span class="metric-suffix">%</span></div>
+                    <p class="proof-label">Client Retention</p>
+                    <p class="proof-src">Kansai Nerolac</p>
+                </div>
+                <div class="proof-item">
+                    <div class="metric-num proof-num"><span class="stat-counter" data-target="6">6</span></div>
+                    <p class="proof-label">National Landmark Projects</p>
+                    <p class="proof-src">Kansai Nerolac</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="competencies" class="sec-a py-10 md:py-14 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8 md:mb-10 reveal">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Core Competencies Matrix</h2>
+                <p class="text-steel-400 max-w-2xl mx-auto">A full-stack skill matrix spanning enterprise sales, customer success, and systems leadership</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+                <!-- Column 1: Enterprise Sales & BD -->
+                <div class="reveal card-glass rounded-2xl overflow-hidden acc-col">
+                    <div class="acc-head flex flex-row md:flex-col items-center md:text-center gap-3 md:gap-0 py-4 md:py-8 px-5 border-b border-white/10">
+                        <div class="w-12 h-12 rounded-xl bg-blueprint-500/10 flex items-center justify-center md:mb-4 flex-shrink-0">
+                            <svg class="w-6 h-6 text-blueprint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12M5.636 18.364a9 9 0 1112.728 0"/></svg>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-white">Enterprise Sales &amp; BD</h3>
+                        <svg class="acc-chev ml-auto w-5 h-5 text-steel-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="divide-y divide-white/5 acc-body">
+                        <div class="p-4 md:p-5 bg-white/[0.02]">
+                            <h4 class="text-white font-semibold text-sm mb-1">Corporate Sales Strategy &amp; Execution</h4>
+                            <p class="text-steel-400 text-xs">Driving B2B revenue growth across corporate and government segments</p>
+                        </div>
+                        <div class="p-4 md:p-5">
+                            <h4 class="text-white font-semibold text-sm mb-1">Business Development &amp; Seller Acquisition</h4>
+                            <p class="text-steel-400 text-xs">End-to-end onboarding, pipeline optimization, conversion tracking</p>
+                        </div>
+                        <div class="p-4 md:p-5 bg-white/[0.02]">
+                            <h4 class="text-white font-semibold text-sm mb-1">Government &amp; Tender Management</h4>
+                            <p class="text-steel-400 text-xs">Ministry liaison, tender requirements, landmark project delivery; government contracts representing 20% of company revenue</p>
+                        </div>
+                        <div class="p-4 md:p-5">
+                            <h4 class="text-white font-semibold text-sm mb-1">Executive Relationship Management</h4>
+                            <p class="text-steel-400 text-xs">Single point of contact for senior procurement, ministry, and project stakeholders</p>
+                        </div>
+                        <div class="p-4 md:p-5 bg-white/[0.02]">
+                            <h4 class="text-white font-semibold text-sm mb-1">Upsell &amp; Cross-sell Growth</h4>
+                            <p class="text-steel-400 text-xs">Account expansion across tier-1 contractors, developers, and institutional buyers</p>
+                        </div>
+                        <div class="p-4 md:p-5">
+                            <h4 class="text-white font-semibold text-sm mb-1">Dealer &amp; Retail Channel Management</h4>
+                            <p class="text-steel-400 text-xs">Managed BSRM's national dealer/retailer distribution network across Bangladesh for 7+ years; built the dealer appointment process and the first-ever dealer-wise sales targets in the steel industry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Operations & Leadership -->
+                <div class="reveal card-glass rounded-2xl overflow-hidden acc-col" style="transition-delay: 0.1s;">
+                    <div class="acc-head flex flex-row md:flex-col items-center md:text-center gap-3 md:gap-0 py-4 md:py-8 px-5 border-b border-white/10">
+                        <div class="w-12 h-12 rounded-xl bg-blueprint-500/10 flex items-center justify-center md:mb-4 flex-shrink-0">
+                            <svg class="w-6 h-6 text-blueprint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-white">Operations &amp; Leadership</h3>
+                        <svg class="acc-chev ml-auto w-5 h-5 text-steel-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="divide-y divide-white/5 acc-body">
+                        <div class="p-4 md:p-5 bg-white/[0.02]">
+                            <h4 class="text-white font-semibold text-sm mb-1">Policy, SOP &amp; Process Development</h4>
+                            <p class="text-steel-400 text-xs">Sole authorship of 3 institutional policies at BSRM, incl. the Dealers Evaluation Policy (with the Sales Policy and Business Letter Issuing Policy)</p>
+                        </div>
+                        <div class="p-4 md:p-5">
+                            <h4 class="text-white font-semibold text-sm mb-1">ERP Implementation &amp; Sales Systems</h4>
+                            <p class="text-steel-400 text-xs">Core committee member at BSRM, sales-side ERP requirements &amp; integration</p>
+                        </div>
+                        <div class="p-4 md:p-5 bg-white/[0.02]">
+                            <h4 class="text-white font-semibold text-sm mb-1">Team Leadership &amp; Coaching</h4>
+                            <p class="text-steel-400 text-xs">Led Business Development teams at Daraz and BSRM; KPI-setting, coaching cadence, SLA compliance</p>
+                        </div>
+                        <div class="p-4 md:p-5">
+                            <h4 class="text-white font-semibold text-sm mb-1">Sales Forecasting &amp; Pipeline Management</h4>
+                            <p class="text-steel-400 text-xs">Account-level forecasting, follow-up cadences, and reconciliation; KPI dashboards in Excel and Google Sheets</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Customer Success & Tools -->
+                <div class="reveal card-glass rounded-2xl overflow-hidden acc-col" style="transition-delay: 0.2s;">
+                    <div class="acc-head flex flex-row md:flex-col items-center md:text-center gap-3 md:gap-0 py-4 md:py-8 px-5 border-b border-white/10">
+                        <div class="w-12 h-12 rounded-xl bg-blueprint-500/10 flex items-center justify-center md:mb-4 flex-shrink-0">
+                            <svg class="w-6 h-6 text-blueprint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-white">Customer Success &amp; Tools</h3>
+                        <svg class="acc-chev ml-auto w-5 h-5 text-steel-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="divide-y divide-white/5 acc-body">
+                        <div class="p-4 md:p-5 bg-white/[0.02]">
+                            <h4 class="text-white font-semibold text-sm mb-1">AI-Enabled Sales Operations</h4>
+                            <p class="text-steel-400 text-xs">Prompt engineering, AI-assisted research, content, and reporting workflows</p>
+                        </div>
+                        <div class="p-4 md:p-5">
+                            <h4 class="text-white font-semibold text-sm mb-1">CRM &amp; Customer Success Tools</h4>
+                            <p class="text-steel-400 text-xs">Gainsight-certified; HubSpot CRM certified; account-health and pipeline dashboards</p>
+                        </div>
+                        <div class="p-4 md:p-5 bg-white/[0.02]">
+                            <h4 class="text-white font-semibold text-sm mb-1">Customer Success &amp; Retention</h4>
+                            <p class="text-steel-400 text-xs">Proactive QBRs, account-health management, and repeat-business tracking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="metrics" class="sec-light motif-grid py-10 md:py-14 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 md:mb-10 reveal">
                 <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Career Impact Dashboard</h2>
@@ -877,6 +1073,29 @@
                 </div>
             </div>
 
+            <div class="mt-6 reveal card-glass rounded-2xl p-4 md:p-6 hover-lift">
+                <div class="yr1-band">
+                    <div>
+                        <p class="flow-label mb-1">Daraz Bangladesh · Year One</p>
+                        <p class="text-steel-400 text-sm max-w-[15rem]">Chattogram BD function rebuilt after 3+ years with no market presence</p>
+                    </div>
+                    <div class="yr1-stat">
+                        <div class="metric-num shrink-0 w-[6.5rem] md:w-auto"><span class="stat-counter" data-target="73">73</span><span class="metric-suffix">%</span></div>
+                        <div>
+                            <div class="text-base font-semibold text-white mb-1">Regional Growth</div>
+                            <p class="text-sm text-steel-400">Regional business growth, ahead of a 12-month rebuild plan</p>
+                        </div>
+                    </div>
+                    <div class="yr1-stat">
+                        <div class="metric-num shrink-0 w-[6.5rem] md:w-auto"><span class="metric-suffix">$</span><span class="stat-counter" data-target="367">367</span><span class="metric-suffix">K</span></div>
+                        <div>
+                            <div class="text-base font-semibold text-white mb-1">Team GMV</div>
+                            <p class="text-sm text-steel-400">Generated by a 4-person BD team within the first year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="mt-6 reveal card-glass rounded-2xl p-4 md:p-6 border-l-4 !border-l-blueprint-400">
                 <div class="flex items-start gap-4">
                     <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-blueprint-400/10 flex items-center justify-center flex-shrink-0">
@@ -884,7 +1103,7 @@
                     </div>
                     <div>
                         <h4 class="text-white font-semibold text-base md:text-lg mb-1">Additional Milestones</h4>
-                        <p class="text-steel-300 text-sm md:text-base">Earned <span class="text-blueprint-400 font-semibold">2 consecutive promotions</span> at BSRM and a promotion from Area Sales Manager to Deputy Manager at Kansai Nerolac.</p>
+                        <p class="text-steel-300 text-sm md:text-base">Earned <span class="text-blueprint-400 font-semibold">2 consecutive promotions</span> at BSRM and a promotion from Area Sales Manager to Deputy Manager at Kansai Nerolac. Led a 4-person Business Development team to <span class="text-blueprint-400 font-semibold">400+ new direct importers and top sellers</span> onboarded, and <span class="text-blueprint-400 font-semibold">$367,000 in team GMV</span> within the first year at Daraz.</p>
                     </div>
                 </div>
             </div>
@@ -892,135 +1111,7 @@
     </section>
 
 
-    <!-- Proof of Work -->
-    <section id="proof" class="sec-light py-10 md:py-14 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8 md:mb-10 reveal">
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Proof of Work</h2>
-                <p class="text-steel-400 max-w-2xl mx-auto">Three things I built or delivered, open for you to read, use, and check for yourself.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                <!-- Research report -->
-                <div class="reveal card-glass rounded-2xl p-4 md:p-5 hover-lift flex flex-col">
-                    <div class="h-28 md:h-44 rounded-xl overflow-hidden border border-slate-200 bg-[#0d192e]">
-                        <img src="research-2.webp" alt="Infographic from the Mirsarai and Chattogram PEB Market Intelligence Report" class="w-full h-full object-cover object-top" loading="lazy" decoding="async" width="1000" height="558">
-                    </div>
-                    <div class="pt-5 flex flex-col flex-1">
-                        <p class="flow-label mb-2">Research</p>
-                        <h3 class="font-display text-lg font-bold text-white mb-2">Mirsarai &amp; Chattogram PEB Market Intelligence Report</h3>
-                        <p class="text-steel-400 text-sm leading-relaxed mb-4">55 pages covering 44 projects across 6 clusters, sizing a Tk 100,000+ Cr project pipeline and a Tk 45,000-75,000 Cr addressable PEB opportunity.</p>
-                        <div class="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2">
-                            <a href="https://drive.google.com/file/d/14yV7SaRGcI0ctBtca7ueOI7rvIYEguKO/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 bg-blueprint-600 hover:bg-blueprint-500 text-white rounded-lg text-sm font-semibold transition-colors">
-                                Read the report
-                                <svg class="w-3.5 h-3.5 ext"><use href="#i-ext"/></svg>
-                            </a>
-                            <a href="#research" class="text-sm font-medium text-blueprint-400 hover:underline">Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Job Market Visualizer -->
-                <div class="reveal card-glass rounded-2xl p-4 md:p-5 hover-lift flex flex-col" style="transition-delay: 0.1s;">
-                    <div class="h-28 md:h-44 rounded-xl border border-slate-200 bg-[#0d192e] flex items-center justify-center p-4 md:p-5">
-                        <svg viewBox="0 0 160 90" class="w-full max-w-[16rem] h-auto" role="img" aria-label="Wireframe of a treemap sized by employment headcount">
-                            <rect x="1" y="1" width="70" height="88" rx="4" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-opacity="0.55"/>
-                            <rect x="73" y="1" width="52" height="50" rx="4" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-opacity="0.45"/>
-                            <rect x="127" y="1" width="32" height="50" rx="4" fill="#2563eb" fill-opacity="0.28" stroke="#60a5fa" stroke-opacity="0.5"/>
-                            <rect x="73" y="53" width="34" height="36" rx="4" fill="#2563eb" fill-opacity="0.2" stroke="#60a5fa" stroke-opacity="0.45"/>
-                            <rect x="109" y="53" width="26" height="36" rx="4" fill="#38bdf8" fill-opacity="0.1" stroke="#38bdf8" stroke-opacity="0.4"/>
-                            <rect x="137" y="53" width="22" height="16" rx="3" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-opacity="0.45"/>
-                            <rect x="137" y="71" width="22" height="18" rx="3" fill="#2563eb" fill-opacity="0.14" stroke="#60a5fa" stroke-opacity="0.4"/>
-                        </svg>
-                    </div>
-                    <div class="pt-5 flex flex-col flex-1">
-                        <p class="flow-label mb-2">Product</p>
-                        <h3 class="font-display text-lg font-bold text-white mb-2">Bangladesh Job Market Visualizer</h3>
-                        <p class="text-steel-400 text-sm leading-relaxed mb-4">An interactive treemap of the 73.1 million-person labor force by occupation, with AI-exposure, wage-tier, and education overlays.</p>
-                        <div class="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2">
-                            <a href="https://bangladesh-job-market-visualizer.ai.studio/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 bg-blueprint-600 hover:bg-blueprint-500 text-white rounded-lg text-sm font-semibold transition-colors">
-                                Launch Visualizer
-                                <svg class="w-3.5 h-3.5 ext"><use href="#i-ext"/></svg>
-                            </a>
-                            <a href="#projects" class="text-sm font-medium text-blueprint-400 hover:underline">Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ERP delivery -->
-                <div class="reveal card-glass rounded-2xl p-4 md:p-5 hover-lift flex flex-col md:col-span-2 lg:col-span-1" style="transition-delay: 0.2s;">
-                    <div class="h-28 md:h-44 rounded-xl border border-slate-200 bg-[#0d192e] flex flex-col items-center justify-center gap-4 p-4 md:p-5">
-                        <span class="logo logo-bsrm" role="img" aria-label="BSRM logo"></span>
-                        <div class="flex flex-nowrap items-center justify-center gap-1.5 text-xs font-medium text-blueprint-300">
-                            <span class="px-2 py-1 rounded-full border border-blueprint-400/30 bg-blueprint-400/10 !text-blueprint-300">Design</span>
-                            <span class="text-slate-500">→</span>
-                            <span class="px-2 py-1 rounded-full border border-blueprint-400/30 bg-blueprint-400/10 !text-blueprint-300">Validate</span>
-                            <span class="text-slate-500">→</span>
-                            <span class="px-2 py-1 rounded-full border border-blueprint-400/30 bg-blueprint-400/10 !text-blueprint-300">Go live</span>
-                            <span class="text-slate-500">→</span>
-                            <span class="px-2 py-1 rounded-full border border-blueprint-400/30 bg-blueprint-400/10 !text-blueprint-300">Sustain</span>
-                        </div>
-                    </div>
-                    <div class="pt-5 flex flex-col flex-1">
-                        <p class="flow-label mb-2">Delivery</p>
-                        <h3 class="font-display text-lg font-bold text-white mb-2">Oracle eBS ERP Rollout, BSRM Group (2014)</h3>
-                        <p class="text-steel-400 text-sm leading-relaxed mb-4">Core team member for the Sales module, recognised by the Finance Director with a Certificate of Recognition, and sole Sales support contact for 6 months after go-live.</p>
-                        <div class="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2">
-                            <a href="#signature-project" class="inline-flex items-center gap-2 px-4 py-2.5 bg-blueprint-600 hover:bg-blueprint-500 text-white rounded-lg text-sm font-semibold transition-colors">
-                                Read the case
-                                <svg class="w-4 h-4"><use href="#i-arrow-right"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-<!-- Executive Snapshot -->
-    <section id="snapshot" class="sec-light sec-tint py-5 md:py-8 md:py-12 relative border-y border-white/5">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-5">
-                <div>
-                    <p class="text-xs text-steel-400 uppercase tracking-wider mb-1">Experience</p>
-                    <p class="text-white font-semibold">14+ Years</p>
-                </div>
-                <div>
-                    <p class="text-xs text-steel-400 uppercase tracking-wider mb-1">Core Domain</p>
-                    <p class="text-white font-semibold">B2B Sales &amp; Business Development</p>
-                </div>
-                <div>
-                    <p class="text-xs text-steel-400 uppercase tracking-wider mb-1">Industry Experience</p>
-                    <p class="text-white font-semibold">Steel · Industrial Paints · E-commerce</p>
-                </div>
-                <div>
-                    <p class="text-xs text-steel-400 uppercase tracking-wider mb-1">Leadership</p>
-                    <p class="text-white font-semibold">Business Development Team Leadership</p>
-                </div>
-                <div>
-                    <p class="text-xs text-steel-400 uppercase tracking-wider mb-1">Commercial Strength</p>
-                    <p class="text-white font-semibold">Enterprise &amp; Government Accounts</p>
-                </div>
-                <div>
-                    <p class="text-xs text-steel-400 uppercase tracking-wider mb-1">Technology</p>
-                    <p class="text-white font-semibold">CRM · ERP · AI · Analytics</p>
-                </div>
-                <div>
-                    <p class="text-xs text-steel-400 uppercase tracking-wider mb-1">Location</p>
-                    <p class="text-white font-semibold">Dhaka, Bangladesh</p>
-                </div>
-                <div>
-                    <p class="text-xs text-steel-400 uppercase tracking-wider mb-1">Availability</p>
-                    <p class="text-white font-semibold">Open to Sales &amp; Business Development Leadership Roles</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <!-- Three Pillars Philosophy (with new studio portrait) -->
-    <section id="philosophy" class="sec-a py-10 md:py-14 relative">
+    <section id="philosophy" class="sec-light sec-tint py-10 md:py-14 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
@@ -1113,112 +1204,7 @@
     </section>
 
 
-<!-- Core Competencies -->
-    <section id="competencies" class="sec-light py-10 md:py-14 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8 md:mb-10 reveal">
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Core Competencies Matrix</h2>
-                <p class="text-steel-400 max-w-2xl mx-auto">A full-stack skill matrix spanning enterprise sales, customer success, and systems leadership</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-4 md:gap-6">
-                <!-- Column 1: Enterprise Sales & BD -->
-                <div class="reveal card-glass rounded-2xl overflow-hidden acc-col">
-                    <div class="acc-head flex flex-row md:flex-col items-center md:text-center gap-3 md:gap-0 py-4 md:py-8 px-5 border-b border-white/10">
-                        <div class="w-12 h-12 rounded-xl bg-blueprint-500/10 flex items-center justify-center md:mb-4 flex-shrink-0">
-                            <svg class="w-6 h-6 text-blueprint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12M5.636 18.364a9 9 0 1112.728 0"/></svg>
-                        </div>
-                        <h3 class="font-display text-lg font-bold text-white">Enterprise Sales &amp; BD</h3>
-                        <svg class="acc-chev ml-auto w-5 h-5 text-steel-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </div>
-                    <div class="divide-y divide-white/5 acc-body">
-                        <div class="p-4 md:p-5 bg-white/[0.02]">
-                            <h4 class="text-white font-semibold text-sm mb-1">Corporate Sales Strategy &amp; Execution</h4>
-                            <p class="text-steel-400 text-xs">Driving B2B revenue growth across corporate and government segments</p>
-                        </div>
-                        <div class="p-4 md:p-5">
-                            <h4 class="text-white font-semibold text-sm mb-1">Business Development &amp; Seller Acquisition</h4>
-                            <p class="text-steel-400 text-xs">End-to-end onboarding, pipeline optimization, conversion tracking</p>
-                        </div>
-                        <div class="p-4 md:p-5 bg-white/[0.02]">
-                            <h4 class="text-white font-semibold text-sm mb-1">Government &amp; Tender Management</h4>
-                            <p class="text-steel-400 text-xs">Ministry liaison, tender requirements, landmark project delivery; government contracts representing 20% of company revenue</p>
-                        </div>
-                        <div class="p-4 md:p-5">
-                            <h4 class="text-white font-semibold text-sm mb-1">Executive Relationship Management</h4>
-                            <p class="text-steel-400 text-xs">Single point of contact for senior procurement, ministry, and project stakeholders</p>
-                        </div>
-                        <div class="p-4 md:p-5 bg-white/[0.02]">
-                            <h4 class="text-white font-semibold text-sm mb-1">Upsell &amp; Cross-sell Growth</h4>
-                            <p class="text-steel-400 text-xs">60+ new customers onboarded (25+ tier-1); $407K largest single account expansion</p>
-                        </div>
-                        <div class="p-4 md:p-5">
-                            <h4 class="text-white font-semibold text-sm mb-1">Dealer &amp; Retail Channel Management</h4>
-                            <p class="text-steel-400 text-xs">Managed BSRM's national dealer/retailer distribution network across Bangladesh for 7+ years; built the dealer appointment process and the first-ever dealer-wise sales targets in the steel industry</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column 2: Operations & Leadership -->
-                <div class="reveal card-glass rounded-2xl overflow-hidden acc-col" style="transition-delay: 0.1s;">
-                    <div class="acc-head flex flex-row md:flex-col items-center md:text-center gap-3 md:gap-0 py-4 md:py-8 px-5 border-b border-white/10">
-                        <div class="w-12 h-12 rounded-xl bg-blueprint-500/10 flex items-center justify-center md:mb-4 flex-shrink-0">
-                            <svg class="w-6 h-6 text-blueprint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                        </div>
-                        <h3 class="font-display text-lg font-bold text-white">Operations &amp; Leadership</h3>
-                        <svg class="acc-chev ml-auto w-5 h-5 text-steel-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </div>
-                    <div class="divide-y divide-white/5 acc-body">
-                        <div class="p-4 md:p-5 bg-white/[0.02]">
-                            <h4 class="text-white font-semibold text-sm mb-1">Policy &amp; Process Development</h4>
-                            <p class="text-steel-400 text-xs">Sole authorship of 3 company-wide institutional policies at BSRM: Sales Policy, Dealers Evaluation Policy, Business Letter Issuing Policy</p>
-                        </div>
-                        <div class="p-4 md:p-5">
-                            <h4 class="text-white font-semibold text-sm mb-1">ERP Implementation &amp; Sales Systems</h4>
-                            <p class="text-steel-400 text-xs">Core committee member at BSRM, sales-side ERP requirements &amp; integration</p>
-                        </div>
-                        <div class="p-4 md:p-5 bg-white/[0.02]">
-                            <h4 class="text-white font-semibold text-sm mb-1">Team Leadership &amp; Coaching</h4>
-                            <p class="text-steel-400 text-xs">Led Business Development teams at Daraz and BSRM; KPI-setting, coaching cadence, SLA compliance</p>
-                        </div>
-                        <div class="p-4 md:p-5">
-                            <h4 class="text-white font-semibold text-sm mb-1">Sales Forecasting &amp; Pipeline Management</h4>
-                            <p class="text-steel-400 text-xs">110% of assigned collection targets via tighter account follow-up cadences and reconciliation; KPI dashboards in Excel and Google Sheets</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column 3: Modern Tech Stack -->
-                <div class="reveal card-glass rounded-2xl overflow-hidden acc-col" style="transition-delay: 0.2s;">
-                    <div class="acc-head flex flex-row md:flex-col items-center md:text-center gap-3 md:gap-0 py-4 md:py-8 px-5 border-b border-white/10">
-                        <div class="w-12 h-12 rounded-xl bg-blueprint-500/10 flex items-center justify-center md:mb-4 flex-shrink-0">
-                            <svg class="w-6 h-6 text-blueprint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
-                        </div>
-                        <h3 class="font-display text-lg font-bold text-white">Modern Tech Stack</h3>
-                        <svg class="acc-chev ml-auto w-5 h-5 text-steel-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </div>
-                    <div class="divide-y divide-white/5 acc-body">
-                        <div class="p-4 md:p-5 bg-white/[0.02]">
-                            <h4 class="text-white font-semibold text-sm mb-1">AI-Enabled Sales Operations</h4>
-                            <p class="text-steel-400 text-xs">Prompt engineering, AI-assisted research, content, and reporting workflows</p>
-                        </div>
-                        <div class="p-4 md:p-5">
-                            <h4 class="text-white font-semibold text-sm mb-1">CRM &amp; Customer Success Tools</h4>
-                            <p class="text-steel-400 text-xs">Gainsight-certified; HubSpot CRM certified; account-health and pipeline dashboards</p>
-                        </div>
-                        <div class="p-4 md:p-5 bg-white/[0.02]">
-                            <h4 class="text-white font-semibold text-sm mb-1">Customer Success &amp; Retention</h4>
-                            <p class="text-steel-400 text-xs">95% client retention / GRR; proactive QBRs and account-health management</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <!-- Career Timeline: dual track -->
-    <section id="experience" class="sec-a py-10 md:py-14 relative">
+    <section id="experience" class="sec-b py-10 md:py-14 relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 reveal">
                 <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Career Evolution: 14+ Years of Scalable Revenue Leadership</h2>
@@ -1260,10 +1246,9 @@
                             </div>
                             <p class="text-steel-400 text-sm mb-3">Senior Executive, Corporate Sales</p>
                             <ul class="text-sm text-steel-300 space-y-1">
-                                <li>• National dealer &amp; retailer network managed for 7+ years, including dealer events (We Value You, Dealer's Night)</li>
-                                <li>• First-ever dealer-wise sales targets in the steel industry</li>
-                                <li>• Sales closed with foreign corporate clients on national landmark projects</li>
-                                <li>• Project sales sustained over 7 years through government ministry liaison</li>
+                                <li>• Managed BSRM's national dealer &amp; retailer distribution network for 7+ years, including the steel industry's first-ever dealer-wise sales targets</li>
+                                <li>• Sole-authored 3 company-wide institutional policies, incl. the Dealers Evaluation Policy</li>
+                                <li>• Closed sales with foreign corporate clients on high-profile national landmark projects, backed by 7 years of government ministry liaison</li>
                                 <li>• Promoted twice: Documentation Officer → Senior Officer → Senior Executive</li>
                             </ul>
                             <span class="lane-tag lane-tag-mobile e mt-4">Enterprise Sales Leadership</span>
@@ -1279,12 +1264,12 @@
                             </div>
                             <p class="text-steel-400 text-sm mb-3">Policy &amp; ERP Implementation, Sales Department</p></div>
                             <ul class="text-sm text-steel-300 space-y-1">
-                                <li>• Authored 3 company-wide institutional policies: Sales, Dealers Evaluation, and Business Letter Issuing</li>
+                                <li>• Policy set: Sales, Dealers Evaluation, and Business Letter Issuing, formally adopted as standing practice</li>
                                 <li>• ERP Core Support Committee Member</li>
                                 <li>• Oracle eBS ERP implementation, Sales module (2014)</li>
                             </ul>
-                            <a href="#signature-project" class="inline-flex items-center gap-1.5 mt-3 text-sm text-blueprint-400 hover:text-blueprint-300 font-medium">
-                                Read the signature project
+                            <a href="#signature-project" class="tap24 inline-flex items-center gap-1.5 mt-3 text-sm text-blueprint-400 hover:text-blueprint-300 font-medium">
+                                See the ERP implementation
                                 <svg class="w-4 h-4"><use href="#i-arrow-right"/></svg>
                             </a>
                             <span class="lane-tag lane-tag-mobile d mt-4">Digital Transformation &amp; Operations</span>
@@ -1310,12 +1295,10 @@
                             </div>
                             <p class="text-steel-400 text-sm mb-3">Deputy Manager, Corporate Sales</p>
                             <ul class="text-sm text-steel-300 space-y-1">
-                                <li>• Built the corporate sales function from scratch at the 2019 Bangladesh launch</li>
-                                <li>• 30% revenue growth in Year 1 through B2B outreach to major contractors and developers</li>
-                                <li>• 60+ new medium &amp; big corporate customers onboarded (25+ tier-1)</li>
-                                <li>• 6 national landmark projects, including power-plant supply contracts (Barisal and Meghnaghat supplied with 100% Kansai paints, a company first)</li>
-                                <li>• Government contracts worth 20% of company revenue</li>
-                                <li>• Promoted from Area Sales Manager</li>
+                                <li>• Built corporate sales from zero brand recognition to 100% share on 2 landmark power projects</li>
+                                <li>• Closed a BDT 50M (~$407K) single order, the highest in company history</li>
+                                <li>• Scaled the same trust-first approach across 6 national landmark infrastructure projects</li>
+                                <li>• Promoted from Area Sales Manager to Deputy Manager, Corporate Sales</li>
                             </ul>
                             <span class="lane-tag lane-tag-mobile e mt-4">Enterprise Sales Leadership</span>
                         </div>
@@ -1354,12 +1337,12 @@
                                 <span class="logo logo-daraz" role="img" aria-label="Daraz logo"></span>
                                 <h3 class="text-xl font-bold text-white">Daraz Bangladesh</h3>
                             </div>
-                            <p class="text-steel-400 text-sm mb-3">Business Development Team Lead</p>
+                            <p class="text-steel-400 text-sm mb-3">Business Development Manager</p>
                             <ul class="text-sm text-steel-300 space-y-1">
-                                <li>• Rebuilt the Chattogram Business Development function from a multi-year vacancy</li>
-                                <li>• 100% of monthly targets from the 3rd month onward; COO recognition as the region's best-performing manager</li>
-                                <li>• Full-funnel seller acquisition: prospecting, pitching, onboarding, activation, and incubation</li>
-                                <li>• Led the BD team through KPI-setting, coaching cadences, and performance reviews</li>
+                                <li>• 12-month regional rebuild mandate: market had no BD presence for 3+ years; delivered ahead of plan by month 3</li>
+                                <li>• 400+ direct importers &amp; top sellers onboarded across Electronics, FMCG, Lifestyle, Fashion</li>
+                                <li>• 73% regional growth; $367,000 team GMV within the first year</li>
+                                <li>• Led a 4-person BD team to 100% of seller onboarding &amp; GMV targets from month 3</li>
                             </ul>
                             <span class="lane-tag lane-tag-mobile e mt-4">Enterprise Sales Leadership</span>
                         </div>
@@ -1372,7 +1355,7 @@
                                 <span class="logo logo-daraz" role="img" aria-label="Daraz logo"></span>
                                 <h3 class="text-xl font-bold text-white">Daraz Bangladesh</h3>
                             </div>
-                            <p class="text-steel-400 text-sm mb-3">Business Development Team Lead</p></div>
+                            <p class="text-steel-400 text-sm mb-3">Business Development Manager</p></div>
                             <ul class="text-sm text-steel-300 space-y-1">
                                 <li>• Excel and Google Sheets pipeline dashboards that exposed funnel drop-offs and lifted conversion and activation</li>
                                 <li>• Grew the active seller base and product variety month over month</li>
@@ -1388,84 +1371,88 @@
     </section>
 
 
-<!-- Professional Research -->
-    <section id="research" class="sec-light py-10 md:py-14 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8 md:mb-10 reveal">
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Strategic Market Intelligence</h2>
-                <p class="text-steel-400 max-w-2xl mx-auto">Independent market intelligence, built for strategic account targeting</p>
-            </div>
-
-            <div class="reveal gradient-border rounded-2xl p-5 md:p-8 hover-lift mb-8">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blueprint-500/10 border border-blueprint-500/20 text-blueprint-400 text-xs font-medium mb-4">
-                    55-Page Market Intelligence Report
-                </div>
-                <h3 class="font-display text-2xl md:text-3xl font-bold text-white mb-2">Mirsarai &amp; Chattogram Mega-Project Pipeline: PEB Market Intelligence Report</h3>
-                <p class="text-steel-400 text-sm mb-6">Independent research · Prepared 6th August 2026 · 44 projects across 6 geographic/entity clusters</p>
-                <a href="https://drive.google.com/file/d/14yV7SaRGcI0ctBtca7ueOI7rvIYEguKO/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mb-6 px-5 py-2.5 bg-blueprint-600 hover:bg-blueprint-500 text-white rounded-lg text-sm font-semibold transition-all">
-                    View Report
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                </a>
-                <p class="text-steel-300 leading-relaxed mb-6 clamp-m max-md:line-clamp-4">
-                    I conduct professional research beyond day-to-day sales execution — sourcing, structuring, and sizing market
-                    opportunities from primary and public data. This report maps the entire pre-engineered building (PEB) and
-                    structural steel demand pipeline across the Mirsarai-Chattogram industrial corridor, benchmarking competitors,
-                    identifying unawarded procurement windows, and building a strategic account-targeting plan.
-                </p>
-
-                <div class="grid sm:grid-cols-3 gap-4 mb-8">
-                    <div class="rounded-xl bg-steel-900/50 border border-white/5 p-4 md:p-5 text-center">
-                        <p class="font-display text-2xl font-bold text-gold-500">Tk 100,000+ Cr</p>
-                        <p class="text-steel-400 text-xs mt-1">Total project pipeline value</p>
-                    </div>
-                    <div class="rounded-xl bg-steel-900/50 border border-white/5 p-4 md:p-5 text-center">
-                        <p class="font-display text-2xl font-bold text-gold-500">Tk 45,000-75,000 Cr</p>
-                        <p class="text-steel-400 text-xs mt-1">Addressable PEB opportunity</p>
-                    </div>
-                    <div class="rounded-xl bg-steel-900/50 border border-white/5 p-4 md:p-5 text-center">
-                        <p class="font-display text-2xl font-bold text-gold-500">44 / 6</p>
-                        <p class="text-steel-400 text-xs mt-1">Projects tracked / clusters mapped</p>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-4 md:gap-6">
-                    <div class="rounded-xl overflow-hidden border border-white/10">
-                        <img width="1000" height="558" loading="lazy" decoding="async" src="research-1.webp" alt="Mirsarai and Chattogram Mega-Project Pipeline infographic" class="w-full h-auto object-cover">
-                    </div>
-                    <div class="rounded-xl overflow-hidden border border-white/10">
-                        <img width="1000" height="558" loading="lazy" decoding="async" src="research-2.webp" alt="PEB Market Intelligence 2026-2030 infographic" class="w-full h-auto object-cover">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-<!-- Signature Project -->
     <section id="signature-project" class="sec-a py-10 md:py-14 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 md:mb-10 reveal">
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">From Sales Executive to Business Systems Architect</h2>
-                <p class="text-steel-400 max-w-2xl mx-auto">Enterprise-wide systems leadership, recognized at the Executive Committee level</p>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Signature Project</h2>
+                <p class="text-steel-400 max-w-2xl mx-auto">Kansai Nerolac Bangladesh, 2019–2025: a corporate sales function built from zero brand recognition</p>
             </div>
 
-            <div class="reveal gradient-border rounded-2xl p-5 md:p-8 hover-lift">
+            <div class="reveal gradient-border rounded-2xl p-5 md:p-8">
                 <div class="grid lg:grid-cols-5 gap-8">
-                    <div class="lg:col-span-3 space-y-5">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blueprint-400/10 border border-blueprint-400/20 text-blueprint-400 text-xs font-medium">
-                            Certificate of Recognition — Finance Director, BSRM Group
+                    <div class="lg:col-span-3 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="logo logo-kansai" role="img" aria-label="Kansai Nerolac logo"></span>
+                            <p class="text-blueprint-400 text-sm font-medium">Kansai Nerolac Paints Bangladesh · Deputy Manager, Corporate Sales</p>
                         </div>
-                        <h3 class="font-display text-2xl md:text-3xl font-bold text-white">Oracle eBS ERP Implementation — Sales Module</h3>
+                        <h3 class="font-display text-2xl md:text-3xl font-bold text-white">Building Market Trust From Zero: Winning Bangladesh's National Power Infrastructure Pipeline</h3>
+                        <p class="text-steel-300 leading-relaxed clamp-m max-md:line-clamp-4">
+                            When Kansai Nerolac Paints entered Bangladesh in 2019, it had no local track record and no brand recognition
+                            among the international EPC contractors driving the country's power infrastructure build-out. I built the corporate
+                            sales function from the ground up — no inherited accounts, no first-mover advantage, no reputation to lean on.
+                        </p>
+                        <p class="text-steel-300 leading-relaxed clamp-m max-md:line-clamp-4">
+                            Foreign EPC contractors typically arrive with procurement shortlists already fixed, defaulting to brands they've
+                            worked with elsewhere. Winning meant becoming the person clients never had to chase — always reachable, always
+                            following through, always ahead of the problem rather than reacting to it. That consistency is what let procurement
+                            teams commit large-value orders to a brand with zero prior track record in the country.
+                        </p>
+                        <p class="flow-label pt-1">Results</p>
+                        <ul class="space-y-2 text-steel-300 text-sm">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-4 h-4 text-blueprint-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <span><strong class="text-white">100% of paint requirements won on 2 national landmark power projects</strong> — Barisal Coal-Fired Power Plant and Bangladesh Summit Meghnaghat Phase II (600MW CCGT) — the first time Kansai Nerolac Bangladesh achieved full-scope share on a landmark project</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-4 h-4 text-blueprint-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <span>Scaled the same trust-first approach across <strong class="text-white">6 national landmark infrastructure projects</strong>, including Banshkhali 1,320MW, Patuakhali 1,320MW, and Matarbari 2×600MW Ultra Super Critical coal-fired plants, and the Cox's Bazar 60MW Wind Power Plant (US-DK Green Energy)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-4 h-4 text-blueprint-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <span>Single purchase order of <strong class="text-white">BDT 50M (~USD $407K)</strong> for fireproof coatings — the highest-value single order in company history</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-4 h-4 text-blueprint-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <span>Grew the corporate account base from 0 to <strong class="text-white">60+ medium and large corporate customers</strong> (25+ tier-1), and delivered <strong class="text-white">30% revenue growth in Year 1</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:col-span-2 space-y-4">
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="sig-stat"><div class="metric-num"><span class="stat-counter" data-target="100">100</span><span class="metric-suffix">%</span></div><p class="text-steel-400 text-xs mt-2">Share on 2 landmark power projects</p></div>
+                            <div class="sig-stat"><div class="metric-num"><span class="metric-suffix">BDT </span><span class="stat-counter" data-target="50">50</span><span class="metric-suffix">M</span></div><p class="text-steel-400 text-xs mt-2">Largest single order in company history</p></div>
+                            <div class="sig-stat"><div class="metric-num"><span class="stat-counter" data-target="6">6</span></div><p class="text-steel-400 text-xs mt-2">National landmark projects</p></div>
+                            <div class="sig-stat"><div class="metric-num"><span class="stat-counter" data-target="60">60</span><span class="metric-suffix">+</span></div><p class="text-steel-400 text-xs mt-2">Corporate customers, from zero</p></div>
+                        </div>
+                        <div class="card-glass rounded-xl p-4">
+                            <p class="text-xs text-steel-400 uppercase tracking-wider mb-2">Landmark project pipeline</p>
+                            <ul class="sig-projects">
+                                <li><span class="text-white">Barisal Coal-Fired Power Plant</span><span class="text-blueprint-400">100% share</span></li>
+                                <li><span class="text-white">Summit Meghnaghat Phase II · 600MW CCGT</span><span class="text-blueprint-400">100% share</span></li>
+                                <li><span class="text-white">Banshkhali · 1,320MW</span><span class="text-steel-400">Coal-fired</span></li>
+                                <li><span class="text-white">Patuakhali · 1,320MW</span><span class="text-steel-400">Coal-fired</span></li>
+                                <li><span class="text-white">Matarbari · 2×600MW USC</span><span class="text-steel-400">Coal-fired</span></li>
+                                <li><span class="text-white">Cox's Bazar · 60MW</span><span class="text-steel-400">Wind power</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="erp-mini mt-8 pt-8 grid lg:grid-cols-5 gap-8">
+                    <div class="lg:col-span-3 space-y-4">
+                        <p class="flow-label">Also led</p>
+                        <h3 class="font-display text-xl md:text-2xl font-bold text-white">Oracle eBS ERP Implementation — Sales Module</h3>
                         <div class="flex items-center gap-3">
                             <span class="logo logo-bsrm" role="img" aria-label="BSRM logo"></span>
                             <p class="text-blueprint-400 text-sm font-medium">BSRM Group · 2014 · Core Team Member, Sales Department</p>
                         </div>
-                        <p class="text-steel-300 leading-relaxed clamp-m max-md:line-clamp-4">
+                        <p class="text-steel-300 text-sm leading-relaxed clamp-m max-md:line-clamp-4">
                             Served as a core member of the ERP Implementation Support Team at BSRM Group, representing the
                             Sales Department in the successful enterprise-wide rollout of Oracle e-Business Suite (eBS),
                             working alongside Lead Module Owner Md. Iftakhar Rasul.
                         </p>
-                        <p class="text-steel-300 leading-relaxed clamp-m max-md:line-clamp-4">
+                        <p class="text-steel-300 text-sm leading-relaxed clamp-m max-md:line-clamp-4">
                             Contributed across the full implementation lifecycle from the Sales function's perspective —
                             from business process finalisation and SOP development through to live deployment — including
                             data migration validation, report configuration, and system testing prior to go-live.
@@ -1495,83 +1482,71 @@
                             <span class="text-xs px-3 py-1 rounded-full bg-steel-800 text-steel-300">Cross-Site Training</span>
                         </div>
                     </div>
-
                     <div class="lg:col-span-2 space-y-4">
                         <div class="rounded-xl overflow-hidden border border-white/10">
                             <img width="700" height="468" loading="lazy" decoding="async" src="signature.webp" alt="Receiving Certificate of Recognition from the Finance Director, BSRM Group" class="w-full h-auto object-cover">
                         </div>
-                        <div class="card-glass rounded-xl p-4 md:p-5">
-                            <p class="text-xs text-steel-400 uppercase tracking-wider mb-3">Recognition</p>
-                            <p class="text-steel-300 text-sm leading-relaxed">
+                        <div class="card-glass rounded-xl p-4">
+                            <p class="text-xs text-steel-400 uppercase tracking-wider mb-2">Recognition</p>
+                            <p class="text-steel-300 text-sm">
                                 Recognised by the Finance Director of BSRM Group, Mr. Zohair Taherali, with a
                                 Certificate of Recognition for outstanding contribution to the project's success.
                             </p>
                         </div>
-                        <div class="card-glass rounded-xl p-4 md:p-5">
-                            <p class="text-xs text-steel-400 uppercase tracking-wider mb-3">Post-Go-Live Support</p>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-steel-400">Duration</span>
-                                <span class="text-white">6 months</span>
-                            </div>
-                            <div class="flex justify-between text-sm mt-2">
-                                <span class="text-steel-400">Role</span>
-                                <span class="text-white">Sole Sales Contact</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-6 pt-6 border-t border-white/[0.08] acc-col">
-                    <div class="acc-head flex items-start justify-between gap-3">
-                        <div>
-                            <p class="flow-label mb-1">Implementation lifecycle</p>
-                            <p class="text-steel-400 text-sm mb-3 md:mb-6">Oracle eBS ERP, Sales module: from process design to sustained support</p>
-                        </div>
-                        <svg class="acc-chev ml-auto w-5 h-5 text-steel-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </div>
-                    <div class="acc-body">
-                    <div class="grid grid-cols-2 lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-3 lg:gap-2 items-stretch">
-                        <div class="flow-step">
-                            <p class="flow-label mb-2">Step 1</p>
-                            <p class="text-white font-semibold text-sm mb-1">Design</p>
-                            <p class="text-steel-400 text-xs leading-relaxed">Business process finalisation and SOP development for the Sales function</p>
-                        </div>
-                        <div class="flow-arrow"><svg class="w-5 h-5"><use href="#i-arrow-right"/></svg></div>
-                        <div class="flow-step">
-                            <p class="flow-label mb-2">Step 2</p>
-                            <p class="text-white font-semibold text-sm mb-1">Validate</p>
-                            <p class="text-steel-400 text-xs leading-relaxed">Data migration validation, report configuration, and system testing prior to go-live</p>
-                        </div>
-                        <div class="flow-arrow"><svg class="w-5 h-5"><use href="#i-arrow-right"/></svg></div>
-                        <div class="flow-step">
-                            <p class="flow-label mb-2">Step 3</p>
-                            <p class="text-white font-semibold text-sm mb-1">Go live</p>
-                            <p class="text-steel-400 text-xs leading-relaxed">Live deployment as part of the enterprise-wide Oracle eBS rollout</p>
-                        </div>
-                        <div class="flow-arrow"><svg class="w-5 h-5"><use href="#i-arrow-right"/></svg></div>
-                        <div class="flow-step">
-                            <p class="flow-label mb-2">Step 4</p>
-                            <p class="text-white font-semibold text-sm mb-1">Sustain</p>
-                            <p class="text-steel-400 text-xs leading-relaxed">Sole post-implementation support contact for the Sales Department for 6 months</p>
-                        </div>
-                    </div>
-                    <div class="flow-step mt-3 flex items-start gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-blueprint-400/10 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-5 h-5 text-blueprint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-                        </div>
-                        <div>
-                            <p class="text-white font-semibold text-sm mb-0.5">Cross-site training</p>
-                            <p class="text-steel-400 text-xs leading-relaxed">Designed and delivered training across factory, regional, and HQ locations</p>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-<!-- Tech Stack & Certifications -->
-    <section id="stack" class="sec-light motif-dots py-10 md:py-14 relative">
+
+    <section id="recommendations" class="sec-light py-10 md:py-14 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8 md:mb-10 reveal">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Testimonials</h2>
+                <p class="text-steel-400">LinkedIn recommendations from managers, peers, and cross-functional partners</p>
+            </div>
+
+            <div class="t-grid flex md:grid md:grid-cols-2 gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar -mx-4 px-4 md:mx-0 md:px-0 pb-2 md:pb-0">
+                <figure class="card-glass rounded-xl p-4 md:p-5 reveal flex flex-col min-w-[86%] sm:min-w-[60%] md:min-w-0 snap-center">
+                    <svg class="w-6 h-6 text-blueprint-400/40 mb-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+                    <blockquote class="text-steel-300 text-sm mb-4">I had the privilege of working with Sadman Shuvo at BSRM, and I was consistently amazed at how he could accomplish huge and complex tasks within the shortest possible time. His extraordinary analytical and management abilities make him stand out in any crowd. What truly sets him apart is his strong habit of reading and continuous learning, which constantly sharpens his skills and broadens his perspective.</blockquote>
+                    <figcaption class="mt-auto pt-3 border-t border-white/[0.07]">
+                        <p class="t-caption"><strong>Muhammed Mehdi Hasan Chowdhury</strong> — Head of Sales, BSRM Steels Ltd. · worked on the same team at BSRM</p>
+                        <a href="https://www.linkedin.com/in/muhammed-mehdi-hasan-chowdhury-06380135" target="_blank" rel="noopener noreferrer" class="t-link mt-1">View on LinkedIn <svg class="w-3 h-3 ext"><use href="#i-ext"/></svg></a>
+                    </figcaption>
+                </figure>
+                <figure class="card-glass rounded-xl p-4 md:p-5 reveal flex flex-col min-w-[86%] sm:min-w-[60%] md:min-w-0 snap-center" style="transition-delay: 0.1s;">
+                    <svg class="w-6 h-6 text-blueprint-400/40 mb-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+                    <blockquote class="text-steel-300 text-sm mb-4">Sadman Shuvo is a very dedicated and sincere professional and possesses the expertise to build a very successful career. He is passionate to his work, hard working, and honest.</blockquote>
+                    <figcaption class="mt-auto pt-3 border-t border-white/[0.07]">
+                        <p class="t-caption"><strong>Saifur Rahman</strong> — HR (Talent Management) Professional · worked on the same team at BSRM</p>
+                        <a href="https://www.linkedin.com/in/saifur-rahman-saifur" target="_blank" rel="noopener noreferrer" class="t-link mt-1">View on LinkedIn <svg class="w-3 h-3 ext"><use href="#i-ext"/></svg></a>
+                    </figcaption>
+                </figure>
+                <figure class="card-glass rounded-xl p-4 md:p-5 reveal flex flex-col min-w-[86%] sm:min-w-[60%] md:min-w-0 snap-center" style="transition-delay: 0.2s;">
+                    <svg class="w-6 h-6 text-blueprint-400/40 mb-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+                    <blockquote class="text-steel-300 text-sm mb-4">I got the opportunity to meet Sadman at BSRM. We worked together in a sporadic manner but that led to a wonderful relation. He is a nice person with a great quality of building relation vis-a-vis team. Sadman is a true sales guy whom a customer is looking for, and I believe he will be one of the finest sales leaders of this emerging economy.</blockquote>
+                    <figcaption class="mt-auto pt-3 border-t border-white/[0.07]">
+                        <p class="t-caption"><strong>Giasuddin M Tauseef</strong> — Techno-Commercial Project Professional · worked on different teams at BSRM</p>
+                        <a href="https://www.linkedin.com/in/gmtauseef" target="_blank" rel="noopener noreferrer" class="t-link mt-1">View on LinkedIn <svg class="w-3 h-3 ext"><use href="#i-ext"/></svg></a>
+                    </figcaption>
+                </figure>
+                <figure class="card-glass rounded-xl p-4 md:p-5 reveal flex flex-col min-w-[86%] sm:min-w-[60%] md:min-w-0 snap-center" style="transition-delay: 0.3s;">
+                    <svg class="w-6 h-6 text-blueprint-400/40 mb-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+                    <blockquote class="text-steel-300 text-sm mb-4">A brilliant and quick learner, with the superb ability to influence others. A good team player who helps bring the desired result. I firmly believe Sadman will be an asset to any organization he chooses to work with, and I wish him continued success in his journey.</blockquote>
+                    <figcaption class="mt-auto pt-3 border-t border-white/[0.07]">
+                        <p class="t-caption"><strong>Md. Hasnain Arafat</strong> — People-Centric HR Professional · worked on the same team at BSRM</p>
+                        <a href="https://www.linkedin.com/in/md-hasnain-arafat-4827113b" target="_blank" rel="noopener noreferrer" class="t-link mt-1">View on LinkedIn <svg class="w-3 h-3 ext"><use href="#i-ext"/></svg></a>
+                    </figcaption>
+                </figure>
+            </div>
+            <p class="md:hidden text-center text-xs text-steel-400 mt-3">Swipe to read more</p>
+        </div>
+    </section>
+
+
+    <section id="stack" class="sec-a motif-dots py-10 md:py-14 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 md:mb-10 reveal">
                 <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">AI-Enabled Commercial Leadership</h2>
@@ -1711,290 +1686,10 @@
         </div>
     </section>
 
-    
-<!-- Featured Project -->
-    <section id="projects" class="sec-a py-10 md:py-14 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8 md:mb-10 reveal">
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Applied Analytics &amp; AI Projects</h2>
-                <p class="text-steel-400 max-w-2xl mx-auto">Applying the same structural rigor from institutional sales to self-built AI analytics platforms</p>
-            </div>
 
-            <div class="reveal gradient-border rounded-2xl p-5 md:p-8 hover-lift">
-                <div class="grid lg:grid-cols-5 gap-8">
-                    <div class="lg:col-span-3 space-y-5">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blueprint-500/10 border border-blueprint-500/20 text-blueprint-400 text-xs font-medium">
-                            Production Release v3.4.1
-                        </div>
-                        <h3 class="font-display text-2xl md:text-3xl font-bold text-white">Bangladesh Job Market Visualizer & Labor Analysis Platform</h3>
-                        <p class="text-steel-300 leading-relaxed clamp-m max-md:line-clamp-4">
-                            A self-built analytics dashboard mapping Bangladesh's 73.1 million-person labor force onto an
-                            interactive treemap, aligned to the 19th ICLS standard, the Bangladesh Bureau of Statistics
-                            Labor Force Survey 2024, and the BSCO 2020 occupational taxonomy. Built for economists,
-                            policymakers, and TVET coordinators to explore employment structure, wage tiers, and
-                            AI-exposure risk down to the 4-digit occupation code.
-                        </p>
-                        <ul class="space-y-2 text-steel-400 text-sm">
-                            <li class="flex items-start gap-2">
-                                <svg class="w-4 h-4 text-blueprint-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                Dynamic treemap sized by employment headcount, with toggleable AI-exposure, wage-tier, and education-requirement overlays
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <svg class="w-4 h-4 text-blueprint-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                Custom Job Scorer & Policy Simulator for modeling new occupations and previewing labor-market impact before formal reform
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <svg class="w-4 h-4 text-blueprint-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                State-aware CSV export with UTF-8 BOM encoding and a 16-field structured schema for downstream analysis in R, Python, or Stata
-                            </li>
-                        </ul>
-                        <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="text-xs px-3 py-1 rounded-full bg-steel-800 text-steel-300">19th ICLS Standard</span>
-                            <span class="text-xs px-3 py-1 rounded-full bg-steel-800 text-steel-300">BSCO 2020 Taxonomy</span>
-                            <span class="text-xs px-3 py-1 rounded-full bg-steel-800 text-steel-300">BBS LFS 2024</span>
-                            <span class="text-xs px-3 py-1 rounded-full bg-steel-800 text-steel-300">NSDA / NTVQF Framework</span>
-                        </div>
-                        <div class="pt-4">
-                            <a href="https://bangladesh-job-market-visualizer.ai.studio/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-blueprint-600 hover:bg-blueprint-500 text-white rounded-lg font-semibold transition-all hover:shadow-lg hover:shadow-blueprint-500/25">
-                                Launch Visualizer
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="lg:col-span-2 space-y-4">
-                        <div class="card-glass rounded-xl p-4 md:p-5">
-                            <p class="text-xs text-steel-400 uppercase tracking-wider mb-3">Headline National Indicators</p>
-                            <div class="grid grid-cols-3 gap-3 text-center">
-                                <div>
-                                    <p class="text-xl font-bold text-white">3.66%</p>
-                                    <p class="text-steel-400 text-xs mt-1">Unemployment</p>
-                                </div>
-                                <div>
-                                    <p class="text-xl font-bold text-white">84.3%</p>
-                                    <p class="text-steel-400 text-xs mt-1">Informal Share</p>
-                                </div>
-                                <div>
-                                    <p class="text-xl font-bold text-white">13.5%</p>
-                                    <p class="text-steel-400 text-xs mt-1">Graduate Jobless</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-glass rounded-xl p-4 md:p-5">
-                            <p class="text-xs text-steel-400 uppercase tracking-wider mb-3">Sample Node: Sewing Machine Operator</p>
-                            <div class="space-y-2 text-sm">
-                                <div class="flex justify-between"><span class="text-steel-400">BSCO Code</span><span class="text-white">8211</span></div>
-                                <div class="flex justify-between"><span class="text-steel-400">Headcount</span><span class="text-white">4.8M</span></div>
-                                <div class="flex justify-between"><span class="text-steel-400">AI Exposure</span><span class="text-rose-400 font-medium">7.2 / 10 — High</span></div>
-                                <div class="flex justify-between"><span class="text-steel-400">Median Wage</span><span class="text-white">BDT 14,500</span></div>
-                            </div>
-                        </div>
-                        <div class="card-glass rounded-xl p-4 md:p-5">
-                            <p class="text-xs text-steel-400 uppercase tracking-wider mb-3">Export Schema</p>
-                            <p class="text-steel-300 text-sm">16 structured fields · UTF-8 BOM · 10 economic sectors</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-6 pt-6 border-t border-white/[0.08] acc-col">
-                    <div class="acc-head flex items-start justify-between gap-3">
-                        <div>
-                            <p class="flow-label mb-1">Platform architecture</p>
-                            <p class="text-steel-400 text-sm mb-3 md:mb-6">From national statistical sources to exportable policy analysis</p>
-                        </div>
-                        <svg class="acc-chev ml-auto w-5 h-5 text-steel-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </div>
-                    <div class="acc-body">
-                    <div class="grid grid-cols-2 lg:grid-cols-[1fr_auto_1fr_auto_1.25fr_auto_1fr] gap-3 lg:gap-2 items-stretch">
-                        <div class="flow-step">
-                            <p class="flow-label mb-2">Sources</p>
-                            <p class="text-white font-semibold text-sm mb-2">Data foundations</p>
-                            <ul class="text-steel-400 text-xs leading-relaxed space-y-1">
-                                <li>BBS Labor Force Survey 2024</li>
-                                <li>BSCO 2020 occupational taxonomy</li>
-                                <li>19th ICLS standard</li>
-                                <li>NSDA / NTVQF framework</li>
-                            </ul>
-                        </div>
-                        <div class="flow-arrow"><svg class="w-5 h-5"><use href="#i-arrow-right"/></svg></div>
-                        <div class="flow-step">
-                            <p class="flow-label mb-2">Model</p>
-                            <p class="text-white font-semibold text-sm mb-1">Occupation model</p>
-                            <p class="text-steel-400 text-xs leading-relaxed">73.1 million-person labor force mapped down to the 4-digit occupation code across 10 economic sectors</p>
-                        </div>
-                        <div class="flow-arrow"><svg class="w-5 h-5"><use href="#i-arrow-right"/></svg></div>
-                        <div class="flow-step">
-                            <p class="flow-label mb-2">Interface</p>
-                            <p class="text-white font-semibold text-sm mb-2">Interactive treemap</p>
-                            <svg viewBox="0 0 160 90" class="w-full max-w-[15rem] h-auto rounded-md mb-2" role="img" aria-label="Wireframe of a treemap sized by employment headcount">
-                                <rect x="1" y="1" width="70" height="88" rx="4" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-opacity="0.55"/>
-                                <rect x="73" y="1" width="52" height="50" rx="4" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-opacity="0.45"/>
-                                <rect x="127" y="1" width="32" height="50" rx="4" fill="#2563eb" fill-opacity="0.28" stroke="#60a5fa" stroke-opacity="0.5"/>
-                                <rect x="73" y="53" width="34" height="36" rx="4" fill="#2563eb" fill-opacity="0.2" stroke="#60a5fa" stroke-opacity="0.45"/>
-                                <rect x="109" y="53" width="26" height="36" rx="4" fill="#38bdf8" fill-opacity="0.1" stroke="#38bdf8" stroke-opacity="0.4"/>
-                                <rect x="137" y="53" width="22" height="16" rx="3" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-opacity="0.45"/>
-                                <rect x="137" y="71" width="22" height="18" rx="3" fill="#2563eb" fill-opacity="0.14" stroke="#60a5fa" stroke-opacity="0.4"/>
-                            </svg>
-                            <p class="text-steel-400 text-xs leading-relaxed mb-3">Sized by employment headcount, with AI-exposure, wage-tier, and education-requirement overlays</p>
-                            <p class="text-white font-semibold text-xs mb-0.5">Job Scorer &amp; Policy Simulator</p>
-                            <p class="text-steel-400 text-xs leading-relaxed">Models new occupations and previews labor-market impact</p>
-                        </div>
-                        <div class="flow-arrow"><svg class="w-5 h-5"><use href="#i-arrow-right"/></svg></div>
-                        <div class="flow-step">
-                            <p class="flow-label mb-2">Output</p>
-                            <p class="text-white font-semibold text-sm mb-1">Structured export</p>
-                            <p class="text-steel-400 text-xs leading-relaxed">State-aware CSV with 16 fields and UTF-8 BOM encoding, ready for R, Python, or Stata</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-<!-- Diagnostic Matrix -->
-    <section id="diagnostic" class="sec-light py-10 md:py-14">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8 reveal">
-                <h2 class="font-display text-3xl font-bold text-white mb-4">The Diagnostic Matrix: Bridging the Gap</h2>
-                <p class="text-steel-400">How traditional B2B expertise translates into modern sales architecture</p>
-            </div>
-
-            <div class="overflow-x-auto reveal">
-                <table class="w-full text-left border-collapse">
-                    <thead>
-                        <tr class="border-b border-steel-800">
-                            <th class="py-4 px-6 text-steel-400 font-medium text-sm uppercase tracking-wider">Dimension</th>
-                            <th class="py-4 px-6 text-steel-400 font-medium text-sm uppercase tracking-wider">Traditional B2B Sales</th>
-                            <th class="py-4 px-6 text-blueprint-400 font-medium text-sm uppercase tracking-wider">The Modern Sales Architect</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-steel-800/50">
-                        <tr class="hover:bg-steel-900/30 transition-colors">
-                            <td class="py-3.5 px-6 text-white font-medium">Lead Generation</td>
-                            <td class="py-3.5 px-6 text-steel-400 text-sm">Manual networking and fragmented spreadsheet tracking</td>
-                            <td class="py-3.5 px-6 text-steel-300 text-sm">Data-driven outbound sourcing integrated directly into HubSpot CRM tracking</td>
-                        </tr>
-                        <tr class="hover:bg-steel-900/30 transition-colors">
-                            <td class="py-3.5 px-6 text-white font-medium">Relationship Management</td>
-                            <td class="py-3.5 px-6 text-steel-400 text-sm">Memory-based client history; reactive problem solving</td>
-                            <td class="py-3.5 px-6 text-steel-300 text-sm">Proactive pipeline optimization utilizing data insights and SLA compliance metrics</td>
-                        </tr>
-                        <tr class="hover:bg-steel-900/30 transition-colors">
-                            <td class="py-3.5 px-6 text-white font-medium">Operations & Governance</td>
-                            <td class="py-3.5 px-6 text-steel-400 text-sm">Siloed sales execution disconnected from backend systems</td>
-                            <td class="py-3.5 px-6 text-steel-300 text-sm">Cross-functional alignment, ERP integration, and authorship of company-wide SOPs</td>
-                        </tr>
-                        <tr class="hover:bg-steel-900/30 transition-colors">
-                            <td class="py-3.5 px-6 text-white font-medium">Future-Proofing</td>
-                            <td class="py-3.5 px-6 text-steel-400 text-sm">Relying strictly on historical industry experience</td>
-                            <td class="py-3.5 px-6 text-steel-300 text-sm">Active upskilling in AI prompt engineering, agent design, and next-gen workflow automation</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    
-    <!-- Recommendations -->
-    <section id="recommendations" class="sec-a py-10 md:py-14 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8 md:mb-10 reveal">
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Testimonials</h2>
-                <p class="text-steel-400">LinkedIn recommendations from managers, peers, and cross-functional partners</p>
-            </div>
-
-            <div class="flex md:grid md:grid-cols-2 gap-4 md:gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar -mx-4 px-4 md:mx-0 md:px-0 pb-2 md:pb-0">
-                <!-- Muhammed Mehdi Hasan Chowdhury -->
-                <div class="card-glass rounded-xl p-5 md:p-6 hover-lift reveal flex flex-col min-w-[86%] sm:min-w-[60%] md:min-w-0 snap-center">
-                    <div class="flex items-center justify-between gap-3 mb-4">
-                        <svg class="w-8 h-8 text-blueprint-400/40" fill="currentColor" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-                        <a href="https://www.linkedin.com/in/muhammed-mehdi-hasan-chowdhury-06380135" target="_blank" rel="noopener noreferrer" class="li-badge li-link" aria-label="View recommender on LinkedIn (opens in a new tab)"><svg class="w-3.5 h-3.5"><use href="#i-li"/></svg>View on LinkedIn<svg class="w-3 h-3 ext"><use href="#i-ext"/></svg></a>
-                    </div>
-                    <p class="text-steel-300 text-sm leading-relaxed mb-6">I had the privilege of working with Sadman Shuvo at BSRM, and I was consistently amazed at how he could accomplish huge and complex tasks within the shortest possible time. His extraordinary analytical and management abilities make him stand out in any crowd. What truly sets him apart is his strong habit of reading and continuous learning, which constantly sharpens his skills and broadens his perspective.</p>
-                    <div class="mt-auto flex items-center gap-3 pt-4 border-t border-white/[0.07]">
-                        <div class="avatar-ring"><div>MH</div></div>
-                        <div class="min-w-0">
-                            <p class="text-white font-medium text-sm">Muhammed Mehdi Hasan Chowdhury</p>
-                            <p class="text-steel-400 text-xs">Head of Sales, BSRM Steels Ltd.</p>
-                            <div class="flex flex-wrap items-center gap-2 mt-2">
-                                <span class="logo logo-bsrm" role="img" aria-label="BSRM logo"></span>
-                                <span class="text-xs px-2 py-0.5 rounded-full bg-steel-800 text-steel-300">Worked together on the same team</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Saifur Rahman -->
-                <div class="card-glass rounded-xl p-5 md:p-6 hover-lift reveal flex flex-col min-w-[86%] sm:min-w-[60%] md:min-w-0 snap-center" style="transition-delay: 0.1s;">
-                    <div class="flex items-center justify-between gap-3 mb-4">
-                        <svg class="w-8 h-8 text-blueprint-400/40" fill="currentColor" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-                        <a href="https://www.linkedin.com/in/saifur-rahman-saifur" target="_blank" rel="noopener noreferrer" class="li-badge li-link" aria-label="View recommender on LinkedIn (opens in a new tab)"><svg class="w-3.5 h-3.5"><use href="#i-li"/></svg>View on LinkedIn<svg class="w-3 h-3 ext"><use href="#i-ext"/></svg></a>
-                    </div>
-                    <p class="text-steel-300 text-sm leading-relaxed mb-6">Sadman Shuvo is a very dedicated and sincere professional and possesses the expertise to build a very successful career. He is passionate to his work, hard working, and honest.</p>
-                    <div class="mt-auto flex items-center gap-3 pt-4 border-t border-white/[0.07]">
-                        <div class="avatar-ring"><div>SR</div></div>
-                        <div class="min-w-0">
-                            <p class="text-white font-medium text-sm">Saifur Rahman</p>
-                            <p class="text-steel-400 text-xs">HR (Talent Management) Professional</p>
-                            <div class="flex flex-wrap items-center gap-2 mt-2">
-                                <span class="logo logo-bsrm" role="img" aria-label="BSRM logo"></span>
-                                <span class="text-xs px-2 py-0.5 rounded-full bg-steel-800 text-steel-300">Worked together on the same team</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Giasuddin M Tauseef -->
-                <div class="card-glass rounded-xl p-5 md:p-6 hover-lift reveal flex flex-col min-w-[86%] sm:min-w-[60%] md:min-w-0 snap-center" style="transition-delay: 0.2s;">
-                    <div class="flex items-center justify-between gap-3 mb-4">
-                        <svg class="w-8 h-8 text-blueprint-400/40" fill="currentColor" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-                        <a href="https://www.linkedin.com/in/gmtauseef" target="_blank" rel="noopener noreferrer" class="li-badge li-link" aria-label="View recommender on LinkedIn (opens in a new tab)"><svg class="w-3.5 h-3.5"><use href="#i-li"/></svg>View on LinkedIn<svg class="w-3 h-3 ext"><use href="#i-ext"/></svg></a>
-                    </div>
-                    <p class="text-steel-300 text-sm leading-relaxed mb-6">I got the opportunity to meet Sadman at BSRM. We worked together in a sporadic manner but that led to a wonderful relation. He is a nice person with a great quality of building relation vis-a-vis team. Sadman is a true sales guy whom a customer is looking for, and I believe he will be one of the finest sales leaders of this emerging economy.</p>
-                    <div class="mt-auto flex items-center gap-3 pt-4 border-t border-white/[0.07]">
-                        <div class="avatar-ring"><div>GT</div></div>
-                        <div class="min-w-0">
-                            <p class="text-white font-medium text-sm">Giasuddin M Tauseef</p>
-                            <p class="text-steel-400 text-xs">Techno-Commercial Project Professional</p>
-                            <div class="flex flex-wrap items-center gap-2 mt-2">
-                                <span class="logo logo-bsrm" role="img" aria-label="BSRM logo"></span>
-                                <span class="text-xs px-2 py-0.5 rounded-full bg-steel-800 text-steel-300">Worked on different teams</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Md. Hasnain Arafat -->
-                <div class="card-glass rounded-xl p-5 md:p-6 hover-lift reveal flex flex-col min-w-[86%] sm:min-w-[60%] md:min-w-0 snap-center" style="transition-delay: 0.3s;">
-                    <div class="flex items-center justify-between gap-3 mb-4">
-                        <svg class="w-8 h-8 text-blueprint-400/40" fill="currentColor" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-                        <a href="https://www.linkedin.com/in/md-hasnain-arafat-4827113b" target="_blank" rel="noopener noreferrer" class="li-badge li-link" aria-label="View recommender on LinkedIn (opens in a new tab)"><svg class="w-3.5 h-3.5"><use href="#i-li"/></svg>View on LinkedIn<svg class="w-3 h-3 ext"><use href="#i-ext"/></svg></a>
-                    </div>
-                    <p class="text-steel-300 text-sm leading-relaxed mb-6">A brilliant and quick learner, with the superb ability to influence others. A good team player who helps bring the desired result. I firmly believe Sadman will be an asset to any organization he chooses to work with, and I wish him continued success in his journey.</p>
-                    <div class="mt-auto flex items-center gap-3 pt-4 border-t border-white/[0.07]">
-                        <div class="avatar-ring"><div>HA</div></div>
-                        <div class="min-w-0">
-                            <p class="text-white font-medium text-sm">Md. Hasnain Arafat</p>
-                            <p class="text-steel-400 text-xs">People-Centric HR Professional</p>
-                            <div class="flex flex-wrap items-center gap-2 mt-2">
-                                <span class="logo logo-bsrm" role="img" aria-label="BSRM logo"></span>
-                                <span class="text-xs px-2 py-0.5 rounded-full bg-steel-800 text-steel-300">Worked together on the same team</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="md:hidden text-center text-xs text-steel-400 mt-3">Swipe to read more</p>
-        </div>
-    </section>
-
-
-<!-- Education -->
     <section id="education" class="sec-light py-10 md:py-14 relative">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-left mb-8 md:mb-10 reveal">
+            <div class="text-center mb-8 md:mb-10 reveal">
                 <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Education</h2>
                 <p class="text-steel-400">Academic foundation and recognitions</p>
             </div>
@@ -2036,8 +1731,7 @@
         </div>
     </section>
 
-    
-<!-- Leadership & Extra-Curricular -->
+
     <section id="leadership" class="sec-a py-10 md:py-14 relative">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 md:mb-10 reveal">
@@ -2106,9 +1800,67 @@
         </div>
     </section>
 
-    
-<!-- Why Hire Me -->
-    <section id="bring" class="sec-light py-10 md:py-14 relative">
+
+    <section id="beyond" class="sec-light py-10 md:py-14 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8 md:mb-10 reveal">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Beyond the Core</h2>
+                <p class="text-steel-400 max-w-2xl mx-auto">Independent market research and self-built analytics, applied to commercial strategy</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4 md:gap-6">
+                <!-- Research report -->
+                <div class="reveal card-glass rounded-2xl p-4 md:p-5 hover-lift flex flex-col">
+                    <div class="h-28 md:h-44 rounded-xl overflow-hidden border border-slate-200 bg-[#0d192e]">
+                        <img src="research-2.webp" alt="Infographic from the Mirsarai and Chattogram PEB Market Intelligence Report" class="w-full h-full object-cover object-top" loading="lazy" decoding="async" width="1000" height="558">
+                    </div>
+                    <div class="pt-5 flex flex-col flex-1">
+                        <p class="flow-label mb-2">Research</p>
+                        <h3 class="font-display text-lg font-bold text-white mb-2">Mirsarai &amp; Chattogram PEB Market Intelligence Report</h3>
+                        <p class="font-display text-2xl font-bold text-gold-500 mb-1">Tk 100,000+ Cr</p>
+                        <p class="text-steel-400 text-xs mb-3">Project pipeline mapped across the Mirsarai–Chattogram corridor</p>
+                        <p class="text-steel-400 text-sm mb-4">Independent 55-page report tracking 44 projects in 6 clusters, sizing a Tk 45,000–75,000 Cr addressable PEB opportunity and a strategic account-targeting plan.</p>
+                        <div class="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2">
+                            <a href="https://drive.google.com/file/d/14yV7SaRGcI0ctBtca7ueOI7rvIYEguKO/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 bg-blueprint-600 hover:bg-blueprint-500 text-white rounded-lg text-sm font-semibold transition-colors">
+                                View Full Report
+                                <svg class="w-3.5 h-3.5 ext"><use href="#i-ext"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Market Visualizer -->
+                <div class="reveal card-glass rounded-2xl p-4 md:p-5 hover-lift flex flex-col" style="transition-delay: 0.1s;">
+                    <div class="h-28 md:h-44 rounded-xl border border-slate-200 bg-[#0d192e] flex items-center justify-center p-4 md:p-5">
+                        <svg viewBox="0 0 160 90" class="w-full max-w-[16rem] h-auto" role="img" aria-label="Wireframe of a treemap sized by employment headcount">
+                            <rect x="1" y="1" width="70" height="88" rx="4" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-opacity="0.55"/>
+                            <rect x="73" y="1" width="52" height="50" rx="4" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-opacity="0.45"/>
+                            <rect x="127" y="1" width="32" height="50" rx="4" fill="#2563eb" fill-opacity="0.28" stroke="#60a5fa" stroke-opacity="0.5"/>
+                            <rect x="73" y="53" width="34" height="36" rx="4" fill="#2563eb" fill-opacity="0.2" stroke="#60a5fa" stroke-opacity="0.45"/>
+                            <rect x="109" y="53" width="26" height="36" rx="4" fill="#38bdf8" fill-opacity="0.1" stroke="#38bdf8" stroke-opacity="0.4"/>
+                            <rect x="137" y="53" width="22" height="16" rx="3" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-opacity="0.45"/>
+                            <rect x="137" y="71" width="22" height="18" rx="3" fill="#2563eb" fill-opacity="0.14" stroke="#60a5fa" stroke-opacity="0.4"/>
+                        </svg>
+                    </div>
+                    <div class="pt-5 flex flex-col flex-1">
+                        <p class="flow-label mb-2">Product</p>
+                        <h3 class="font-display text-lg font-bold text-white mb-2">Bangladesh Job Market Visualizer</h3>
+                        <p class="font-display text-2xl font-bold text-gold-500 mb-1">73.1M</p>
+                        <p class="text-steel-400 text-xs mb-3">Workers mapped by occupation (BBS Labour Force Survey 2024)</p>
+                        <p class="text-steel-400 text-sm mb-4">Self-built interactive treemap with AI-exposure, wage-tier, and education overlays, plus a job scorer and policy simulator.</p>
+                        <div class="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2">
+                            <a href="https://bangladesh-job-market-visualizer.ai.studio/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 bg-blueprint-600 hover:bg-blueprint-500 text-white rounded-lg text-sm font-semibold transition-colors">
+                                Launch Visualizer
+                                <svg class="w-3.5 h-3.5 ext"><use href="#i-ext"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="bring" class="sec-a py-10 md:py-14 relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 md:mb-10 reveal">
                 <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">What I Bring to the Table</h2>
@@ -2120,8 +1872,8 @@
                     <p class="text-steel-400 text-sm">Proven B2B growth across industrial and digital ecosystems</p>
                 </div>
                 <div class="reveal card-glass rounded-xl p-5 md:p-6" style="transition-delay:0.05s;">
-                    <h4 class="text-white font-semibold mb-1">Enterprise Accounts</h4>
-                    <p class="text-steel-400 text-sm">Corporate, government, and strategic stakeholder management</p>
+                    <h4 class="text-white font-semibold mb-1">Enterprise &amp; Channel Accounts</h4>
+                    <p class="text-steel-400 text-sm">Corporate, government, channel/dealer, and strategic stakeholder management</p>
                 </div>
                 <div class="reveal card-glass rounded-xl p-5 md:p-6" style="transition-delay:0.1s;">
                     <h4 class="text-white font-semibold mb-1">Business Development</h4>
@@ -2143,47 +1895,53 @@
         </div>
     </section>
 
-    
-    <!-- Target Role -->
-    <section id="roles" class="sec-a py-10 md:py-14 relative">
+
+    <section id="roles" class="sec-light py-10 md:py-14 relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="reveal">
                 <p class="flow-label mb-4">What I'm looking for</p>
-                <h2 class="font-display text-3xl sm:text-5xl font-bold text-white mb-5">Sales &amp; Business Development Leader</h2>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold text-white mb-5">Open to Strategic Leadership Opportunities</h2>
                 <p class="text-steel-400 max-w-2xl mx-auto mb-8">Roles where 14+ years of B2B sales, business development, and commercial leadership translate directly.</p>
             </div>
 
-            <div class="reveal">
-                <p class="text-xs text-steel-400 uppercase tracking-wider mb-4">Open to roles in</p>
-                <div class="flex flex-wrap justify-center gap-3">
-                    <span class="px-5 py-2.5 rounded-full card-glass text-steel-200 text-sm font-medium">Steel</span>
-                    <span class="px-5 py-2.5 rounded-full card-glass text-steel-200 text-sm font-medium">Fintech</span>
-                    <span class="px-5 py-2.5 rounded-full card-glass text-steel-200 text-sm font-medium">FMCG</span>
-                    <span class="px-5 py-2.5 rounded-full card-glass text-steel-200 text-sm font-medium">Telecom</span>
-                    <span class="px-5 py-2.5 rounded-full card-glass text-steel-200 text-sm font-medium">SaaS</span>
-                    <span class="px-5 py-2.5 rounded-full card-glass text-steel-200 text-sm font-medium">E-commerce</span>
+            <div class="reveal mb-8">
+                <p class="text-xs text-steel-400 uppercase tracking-wider mb-4">Target roles</p>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="role-chip">Sales Manager</span>
+                    <span class="role-chip new">National Sales Manager</span>
+                    <span class="role-chip new">Channel Sales Manager</span>
+                    <span class="role-chip">Head of Business Development</span>
+                    <span class="role-chip">Business Development Manager</span>
+                    <span class="role-chip">Commercial Manager</span>
+                    <span class="role-chip">Enterprise Sales Lead</span>
+                    <span class="role-chip">Key Account Manager</span>
+                    <span class="role-chip">Sales Operations / Revenue Operations</span>
+                    <span class="role-chip">Strategic Partnerships / Customer Success Manager</span>
                 </div>
             </div>
 
-            <div class="reveal mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="Sadman_Rayan_Shuvo_Resume.pdf" target="_blank" rel="noopener noreferrer" download data-cv class="btn-gold px-8 py-4 rounded-lg flex items-center justify-center gap-2">
-                    <svg class="w-5 h-5"><use href="#i-download"/></svg>
-                    Download Executive CV
-                </a>
-                <a href="#contact" class="btn-gold-outline px-8 py-4 rounded-lg text-center">Start a Conversation</a>
+            <div class="reveal">
+                <p class="text-xs text-steel-400 uppercase tracking-wider mb-4">Open to industries</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="role-chip">Steel</span>
+                    <span class="role-chip">Fintech</span>
+                    <span class="role-chip">FMCG</span>
+                    <span class="role-chip">Telecom</span>
+                    <span class="role-chip">SaaS</span>
+                    <span class="role-chip">E-commerce</span>
+                </div>
             </div>
         </div>
     </section>
 
 
-<!-- Contact / CTA -->
     <section id="contact" class="sec-b py-10 md:py-14 relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="reveal">
                 <div class="flex justify-center mb-8">
                     <div class="relative">
                         <div class="absolute inset-0 rounded-full bg-blueprint-500/30 blur-2xl"></div>
-                        <img width="500" height="625" loading="lazy" decoding="async" src="contact.webp" alt="Sadman Rayan Shuvo" class="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-blueprint-500/40 shadow-2xl shadow-blueprint-500/20">
+                        <img width="480" height="480" loading="lazy" decoding="async" src="contact.webp" alt="Sadman Rayan Shuvo" class="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-blueprint-500/40 shadow-2xl shadow-blueprint-500/20">
                     </div>
                 </div>
                 <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Let's Build the Next Growth Story</h2>
@@ -2213,7 +1971,7 @@
                 <div class="grid sm:grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto text-left">
                     <div class="card-glass rounded-xl p-4">
                         <p class="text-steel-400 text-xs uppercase tracking-wider mb-1">Phone</p>
-                        <p class="text-white font-medium">+880 1790-653537</p>
+                        <a href="tel:+8801790653537" class="tap24 block text-white font-medium hover:underline">+880 1790-653537</a>
                     </div>
                     <div class="card-glass rounded-xl p-4">
                         <p class="text-steel-400 text-xs uppercase tracking-wider mb-1">Location</p>
@@ -2229,7 +1987,7 @@
         </div>
     </section>
 
-    
+
 <!-- Footer -->
     <footer class="sec-a border-t border-white/[0.08] py-5 md:py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
@@ -2347,8 +2105,8 @@
             // ---------- Scroll-spy: highlights the active link and its parent group ----------
             const sectionGroup = {
                 philosophy: 'profile', leadership: 'profile', education: 'profile',
-                metrics: 'track', proof: 'track', experience: 'track', 'signature-project': 'track', recommendations: 'track',
-                competencies: 'capabilities', stack: 'capabilities', projects: 'capabilities', research: 'capabilities'
+                metrics: 'track', experience: 'track', 'signature-project': 'track', recommendations: 'track',
+                competencies: 'capabilities', stack: 'capabilities', beyond: 'capabilities'
             };
             const spySections = $$('section[id]');
             const nav = $('nav');
@@ -2417,7 +2175,7 @@
             $$('.clamp-m').forEach(p => {
                 const btn = document.createElement('button');
                 btn.type = 'button';
-                btn.className = 'md:hidden text-sm font-medium text-blueprint-400 mt-1 mb-2';
+                btn.className = 'tap24 md:hidden text-sm font-medium text-blueprint-400 mt-1 mb-2';
                 btn.textContent = 'Read more';
                 btn.hidden = true;
                 p.insertAdjacentElement('afterend', btn);
@@ -2437,6 +2195,10 @@
             // ---------- Dual-track timeline focus ----------
             const dual = $('#dual-timeline');
             const trackButtons = $$('.track-btn');
+            if (isMobile()) {
+                dual.dataset.focus = 'e';
+                trackButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.track === 'e')));
+            }
             trackButtons.forEach(btn => {
                 btn.addEventListener('click', () => {
                     const next = dual.dataset.focus === btn.dataset.track ? 'all' : btn.dataset.track;
