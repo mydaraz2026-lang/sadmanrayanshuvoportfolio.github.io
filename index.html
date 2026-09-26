@@ -593,6 +593,35 @@
         .sig-projects li { display: flex; justify-content: space-between; gap: 0.75rem; padding: 0.45rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.8rem; }
         .sig-projects li:last-child { border-bottom: 0; }
         .erp-mini { border-top: 1px solid rgba(255,255,255,0.08); }
+        /* ---------- Signature project: Playbook panel ---------- */
+        .playbook-panel {
+            position: relative;
+            background: rgba(6, 11, 22, 0.6);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-left: 3px solid var(--cyan);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 18px 40px -22px rgba(0,0,0,0.55);
+        }
+        @media (min-width: 640px) { .playbook-panel { padding: 1.75rem 2rem; } }
+        .playbook-steps { margin-top: 1.25rem; }
+        .playbook-step { display: flex; align-items: flex-start; gap: 1rem; padding: 1.05rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .playbook-step:first-child { padding-top: 0; }
+        .playbook-step:last-child { border-bottom: 0; padding-bottom: 0; }
+        .playbook-num {
+            flex-shrink: 0;
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, var(--cyan), var(--cobalt));
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 16px -6px rgba(56, 189, 248, 0.55);
+        }
         /* ---------- Target role chips ---------- */
         .role-chip { padding: 0.45rem 0.95rem; border-radius: 999px; font-size: 0.85rem; font-weight: 500; color: #1e293b; background: #fff; border: 1px solid rgba(15,23,42,0.1); }
         .sec-light .btn-gold-outline { color: #b45309; border-color: rgba(217, 119, 6, 0.7); }
@@ -1439,37 +1468,39 @@
                     </div>
                 </div>
 
-                <div class="mt-8 pt-8 border-t border-white/[0.08]">
-                    <p class="flow-label">The playbook</p>
-                    <h3 class="font-display text-xl md:text-2xl font-bold text-white mt-1 mb-4">Turning Zero Brand Equity Into 100% Share</h3>
-                    <div class="grid sm:grid-cols-2 gap-4">
-                        <div class="card-glass rounded-xl p-4">
-                            <div class="flex items-center gap-2.5 mb-2">
-                                <span class="w-6 h-6 rounded-full bg-blueprint-400/10 text-blueprint-400 text-xs font-bold flex items-center justify-center flex-shrink-0">1</span>
-                                <p class="text-white text-sm font-semibold">ECNEC-Triggered Stakeholder Engagement</p>
+                <div class="mt-10 mb-2">
+                    <div class="playbook-panel">
+                        <p class="flow-label">The playbook</p>
+                        <h3 class="font-display text-xl md:text-2xl font-bold text-white mt-1">Turning Zero Brand Equity Into 100% Share</h3>
+                        <div class="playbook-steps">
+                            <div class="playbook-step">
+                                <span class="playbook-num">1</span>
+                                <div>
+                                    <p class="text-white text-sm font-semibold mb-1">ECNEC-Triggered Stakeholder Engagement</p>
+                                    <p class="text-steel-300 text-sm leading-relaxed">As soon as a project received ECNEC approval, initiated direct communication with the full set of concerned parties — project directors, procurement teams, technical consultants, and relevant ministry counterparts — positioning Kansai as a proactive partner well before the formal tender process began.</p>
+                                </div>
                             </div>
-                            <p class="text-steel-300 text-sm leading-relaxed">As soon as a project received ECNEC approval, initiated direct communication with the full set of concerned parties — project directors, procurement teams, technical consultants, and relevant ministry counterparts — positioning Kansai as a proactive partner well before the formal tender process began.</p>
-                        </div>
-                        <div class="card-glass rounded-xl p-4">
-                            <div class="flex items-center gap-2.5 mb-2">
-                                <span class="w-6 h-6 rounded-full bg-blueprint-400/10 text-blueprint-400 text-xs font-bold flex items-center justify-center flex-shrink-0">2</span>
-                                <p class="text-white text-sm font-semibold">Pre-Tender Relationship Map &amp; Consistent Presence</p>
+                            <div class="playbook-step">
+                                <span class="playbook-num">2</span>
+                                <div>
+                                    <p class="text-white text-sm font-semibold mb-1">Pre-Tender Relationship Map &amp; Consistent Presence</p>
+                                    <p class="text-steel-300 text-sm leading-relaxed">Built and maintained a live stakeholder map for every approved project, with a standing monthly (later weekly) check-in cadence — so by the time each RFQ was issued, Kansai was already a known, responsive, trusted name rather than a cold bidder.</p>
+                                </div>
                             </div>
-                            <p class="text-steel-300 text-sm leading-relaxed">Built and maintained a live stakeholder map for every approved project, with a standing monthly (later weekly) check-in cadence — so by the time each RFQ was issued, Kansai was already a known, responsive, trusted name rather than a cold bidder.</p>
-                        </div>
-                        <div class="card-glass rounded-xl p-4">
-                            <div class="flex items-center gap-2.5 mb-2">
-                                <span class="w-6 h-6 rounded-full bg-blueprint-400/10 text-blueprint-400 text-xs font-bold flex items-center justify-center flex-shrink-0">3</span>
-                                <p class="text-white text-sm font-semibold">Weekly Follow-Up &amp; Problem-Ownership Cadence</p>
+                            <div class="playbook-step">
+                                <span class="playbook-num">3</span>
+                                <div>
+                                    <p class="text-white text-sm font-semibold mb-1">Weekly Follow-Up &amp; Problem-Ownership Cadence</p>
+                                    <p class="text-steel-300 text-sm leading-relaxed">Every live account received a strict weekly rhythm — status update, risk flag, clear next-action owner — with coordination across factory, logistics, and local partners owned personally, turning "new brand" risk into "lowest-effort supplier" preference.</p>
+                                </div>
                             </div>
-                            <p class="text-steel-300 text-sm leading-relaxed">Every live account received a strict weekly rhythm — status update, risk flag, clear next-action owner — with coordination across factory, logistics, and local partners owned personally, turning "new brand" risk into "lowest-effort supplier" preference.</p>
-                        </div>
-                        <div class="card-glass rounded-xl p-4">
-                            <div class="flex items-center gap-2.5 mb-2">
-                                <span class="w-6 h-6 rounded-full bg-blueprint-400/10 text-blueprint-400 text-xs font-bold flex items-center justify-center flex-shrink-0">4</span>
-                                <p class="text-white text-sm font-semibold">Account-Health Scorecard &amp; Repeat-Business Tracking</p>
+                            <div class="playbook-step">
+                                <span class="playbook-num">4</span>
+                                <div>
+                                    <p class="text-white text-sm font-semibold mb-1">Account-Health Scorecard &amp; Repeat-Business Tracking</p>
+                                    <p class="text-steel-300 text-sm leading-relaxed">Maintained a live scorecard tracking pipeline stage, open issues, last contact, collection status, and expansion potential — used for internal weekly reviews and client QBRs, driving <strong class="text-white">95% retention</strong> and systematic expansion into subsequent project phases.</p>
+                                </div>
                             </div>
-                            <p class="text-steel-300 text-sm leading-relaxed">Maintained a live scorecard tracking pipeline stage, open issues, last contact, collection status, and expansion potential — used for internal weekly reviews and client QBRs, driving <strong class="text-white">95% retention</strong> and systematic expansion into subsequent project phases.</p>
                         </div>
                     </div>
                 </div>
