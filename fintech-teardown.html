@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bangladesh Fintech Teardown | Sadman Rayan Shuvo</title>
+<meta name="description" content="A market teardown of Bangladesh's mobile financial services sector: the duopoly, the volume-vs-value illusion, the fee tax on the poor, and where the next commercial battle actually sits.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bangladesh Fintech Teardown — The Wallet Is Solved. Distribution Isn't.">
+<meta property="og:description" content="A market teardown of Bangladesh's Tk 17+ lakh crore mobile financial services sector, and where the real commercial opportunity sits next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --obsidian:#0A0E17; --sec-a:#080d1a; --sec-b:#0e1726; --surface:#131f33;
+    --cyan:#38BDF8; --cobalt:#2563EB; --amber:#F59E0B; --gold:#EAB308;
+    --hairline:rgba(255,255,255,0.08); --text:#e2e8f0; --muted:#94a3b8; --muted2:#64748b;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--obsidian);color:var(--text);font-family:Inter,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;color:#fff;margin:0;line-height:1.15;}
+  p{margin:0;}
+  a{color:inherit;}
+  .wrap{max-width:860px;margin:0 auto;padding:0 1.25rem;}
+  .eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);font-weight:700;}
+  .sec-a{background:radial-gradient(120% 90% at 50% 0%,#0d192e 0%,#080d1a 58%,#080c14 100%);}
+  .sec-b{background:radial-gradient(120% 90% at 50% 100%,#12203a 0%,#0e1726 55%,#0b1220 100%);}
+  section{padding:3rem 0;border-bottom:1px solid var(--hairline);}
+  section:last-of-type{border-bottom:none;}
+  .card{background:rgba(19,31,51,.55);backdrop-filter:blur(10px);border:1px solid var(--hairline);border-radius:1rem;padding:1.5rem;}
+  .stat-gold{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.2rem,5vw,3.2rem);letter-spacing:-.02em;
+    background:linear-gradient(180deg,#FCD34D 0%,#F59E0B 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:#F59E0B;}
+  .lede{font-size:1.1rem;color:#cbd5e1;}
+  .muted{color:var(--muted);}
+  .muted2{color:var(--muted2);}
+  .small{font-size:.85rem;}
+  .tiny{font-size:.75rem;}
+  .tag{display:inline-flex;align-items:center;gap:.35rem;padding:.2rem .65rem;border-radius:999px;font-size:.72rem;font-weight:600;color:#7dd3fc;background:rgba(56,189,248,.09);border:1px solid rgba(56,189,248,.25);}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.4rem;border-radius:.6rem;font-weight:600;font-size:.9rem;text-decoration:none;transition:.2s;}
+  .btn-gold{background:linear-gradient(135deg,#F59E0B,#EAB308);color:#0A0E17;}
+  .btn-gold:hover{filter:brightness(1.07);}
+  .btn-outline{border:1px solid rgba(56,189,248,.45);color:#7dd3fc;}
+  .btn-outline:hover{background:rgba(56,189,248,.1);border-color:#38bdf8;}
+  ul.plain{margin:0;padding:0;list-style:none;}
+  ul.dot li{padding-left:1.1rem;position:relative;margin-bottom:.55rem;}
+  ul.dot li::before{content:'';position:absolute;left:0;top:.55em;width:5px;height:5px;border-radius:50%;background:var(--cyan);}
+  .grid2{display:grid;gap:1rem;grid-template-columns:1fr;}
+  @media(min-width:700px){.grid2{grid-template-columns:1fr 1fr;}}
+  .grid3{display:grid;gap:1rem;grid-template-columns:1fr;}
+  @media(min-width:700px){.grid3{grid-template-columns:repeat(3,1fr);}}
+  .bar-row{display:grid;grid-template-columns:5.5rem 1fr 4.5rem;gap:.75rem;align-items:center;margin-bottom:.6rem;font-size:.82rem;}
+  .bar-track{background:rgba(255,255,255,.06);border-radius:999px;height:.85rem;overflow:hidden;}
+  .bar-fill{height:100%;border-radius:999px;}
+  .fill-cyan{background:linear-gradient(90deg,#2563EB,#38BDF8);}
+  .fill-gold{background:linear-gradient(90deg,#F59E0B,#EAB308);}
+  .fill-red{background:linear-gradient(90deg,#f43f5e,#fb7185);}
+  table.compare{width:100%;border-collapse:collapse;font-size:.85rem;}
+  table.compare th,table.compare td{padding:.6rem .5rem;text-align:left;border-bottom:1px solid var(--hairline);}
+  table.compare th{color:var(--muted);font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;}
+  .src{color:var(--muted2);font-size:.72rem;}
+  .num{font-variant-numeric:tabular-nums;}
+  header.top{position:sticky;top:0;z-index:20;background:rgba(8,13,26,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--hairline);}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.25rem;}
+  header.top a.back{font-size:.82rem;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:.4rem;}
+  header.top a.back:hover{color:#fff;}
+  .hero-badge{width:2px;height:2rem;background:linear-gradient(180deg,var(--cyan),var(--cobalt));border-radius:2px;}
+  footer{padding:2.5rem 0 3.5rem;}
+  .quote{border-left:3px solid var(--cyan);padding-left:1rem;color:#cbd5e1;font-style:italic;}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="back" href="index.html">&larr; Sadman Rayan Shuvo</a>
+    <span class="tiny muted2">Market Teardown · Fintech</span>
+  </div>
+</header>
+
+<section class="sec-a" style="padding-top:3.5rem;">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:1rem;">Market Teardown &middot; Bangladesh Fintech</p>
+    <h1 style="font-size:clamp(2rem,5vw,3rem);margin-bottom:1.1rem;">The wallet is solved.<br>Distribution isn't.</h1>
+    <p class="lede" style="max-width:640px;margin-bottom:1.5rem;">
+      Bangladesh's mobile financial services sector moved <strong>Tk 17.37 lakh crore</strong> (~$158B) in 2024 — up 28% year on year, and still climbing in 2026. On paper it looks like a solved digital economy. Underneath, it's still a cash-handling business wearing an app.
+    </p>
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;align-items:baseline;margin-bottom:1.75rem;">
+      <div><span class="stat-gold">237M</span><br><span class="tiny muted">registered MFS accounts, Dec 2024</span></div>
+      <div><span class="stat-gold">83%</span><br><span class="tiny muted">of transaction volume is MFS &mdash; but only 7% of value</span></div>
+      <div><span class="stat-gold">2</span><br><span class="tiny muted">providers control the market: bKash &amp; Nagad</span></div>
+    </div>
+    <p class="tiny muted2">Compiled by Sadman Rayan Shuvo &middot; September 2026 &middot; figures cited by source and date throughout</p>
+  </div>
+</section>
+
+<section class="sec-b">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:.6rem;">01 &middot; The headline number</p>
+    <h2 style="font-size:1.6rem;margin-bottom:.9rem;">A five-year climb that hasn't slowed</h2>
+    <p class="muted small" style="max-width:640px;margin-bottom:1.5rem;">Annual value of mobile money transactions, Bangladesh (IMF Financial Access Survey, via Bangladesh Bank). Growth has compounded every year since 2020, and 2024's 28% jump was the fastest in the series.</p>
+    <div class="card">
+      <div style="display:flex;align-items:flex-end;gap:1.1rem;height:170px;padding:0 .25rem;">
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;">
+          <div style="width:100%;max-width:2.6rem;border-radius:6px 6px 0 0;background:linear-gradient(180deg,#2563EB,#1d4ed8);height:32%;"></div>
+          <span class="tiny muted2" style="margin-top:.5rem;">2020</span><span class="tiny muted">5.6L Cr</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;">
+          <div style="width:100%;max-width:2.6rem;border-radius:6px 6px 0 0;background:linear-gradient(180deg,#2563EB,#1d4ed8);height:50%;"></div>
+          <span class="tiny muted2" style="margin-top:.5rem;">2021</span><span class="tiny muted">8.9L Cr</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;">
+          <div style="width:100%;max-width:2.6rem;border-radius:6px 6px 0 0;background:linear-gradient(180deg,#38BDF8,#2563EB);height:62%;"></div>
+          <span class="tiny muted2" style="margin-top:.5rem;">2022</span><span class="tiny muted">10.8L Cr</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;">
+          <div style="width:100%;max-width:2.6rem;border-radius:6px 6px 0 0;background:linear-gradient(180deg,#38BDF8,#2563EB);height:78%;"></div>
+          <span class="tiny muted2" style="margin-top:.5rem;">2023</span><span class="tiny muted">13.5L Cr</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;">
+          <div style="width:100%;max-width:2.6rem;border-radius:6px 6px 0 0;background:linear-gradient(180deg,#FCD34D,#F59E0B);height:100%;"></div>
+          <span class="tiny muted2" style="margin-top:.5rem;">2024</span><span class="tiny muted" style="color:#FCD34D;">17.4L Cr</span>
+        </div>
+      </div>
+      <p class="src" style="margin-top:1rem;">Values in BDT lakh crore. Source: IMF Financial Access Survey / Bangladesh Bank, via FRED (fred.stlouisfed.org/series/BGDFCMTVXDC).</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec-a">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:.6rem;">02 &middot; A duopoly, not a market</p>
+    <h2 style="font-size:1.6rem;margin-bottom:.9rem;">14 licensed providers. Two that matter.</h2>
+    <p class="muted small" style="max-width:640px;margin-bottom:1.5rem;">Bangladesh Bank has licensed 14 MFS providers. In practice, the industry moves roughly <strong>Tk 6,000 crore a day</strong>, and almost all of it runs through two names.</p>
+    <div class="card">
+      <div class="bar-row"><span>bKash</span><div class="bar-track"><div class="bar-fill fill-gold" style="width:100%;"></div></div><span class="num">4.20 Cr</span></div>
+      <div class="bar-row"><span>Nagad</span><div class="bar-track"><div class="bar-fill fill-cyan" style="width:67%;"></div></div><span class="num">2.82 Cr</span></div>
+      <div class="bar-row"><span>Rocket</span><div class="bar-track"><div class="bar-fill fill-cyan" style="width:35%;opacity:.55;"></div></div><span class="num">~1.5 Cr*</span></div>
+      <div class="bar-row"><span>Others (11)</span><div class="bar-track"><div class="bar-fill fill-cyan" style="width:14%;opacity:.35;"></div></div><span class="num">rest</span></div>
+      <p class="src" style="margin-top:.75rem;">Active users, crore. bKash and Nagad figures are company-stated (The Daily Star, 29 Jul 2026). *Rocket draws on Dutch-Bangla Bank's ~4 crore banking base; active-wallet figure not separately disclosed, shown here as an estimate band, not a reported number. Nagad's Q1 2026 transaction value hit a record Tk 111,355 crore, up 21% YoY.</p>
+    </div>
+    <div class="grid2" style="margin-top:1.25rem;">
+      <div class="card">
+        <p class="tag" style="margin-bottom:.6rem;">Distribution moat</p>
+        <p class="small muted" style="color:#cbd5e1;">1.83 million agents nationwide (Dec 2024), up from 1.53 million in 2022. The agent network — not the app — is still what makes cash usable as digital money in rural Bangladesh.</p>
+      </div>
+      <div class="card">
+        <p class="tag" style="margin-bottom:.6rem;">Reach</p>
+        <p class="small muted" style="color:#cbd5e1;">~237 million registered accounts against a population of ~170M — more accounts than people, but only 37.6% (~89M) are active. Dormancy, not registration, is the real inclusion gap.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-b">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:.6rem;">03 &middot; What the volume hides</p>
+    <h2 style="font-size:1.6rem;margin-bottom:.9rem;">This isn't a payments economy. It's a cash-handling economy with an app on top.</h2>
+    <p class="muted small" style="max-width:640px;margin-bottom:1.5rem;">MFS accounted for over 83% of all transaction volume in the financial system in a recent month &mdash; but only 7.28% of transaction value. Most of that volume is cash-in and cash-out, not commerce.</p>
+    <div class="card">
+      <div class="bar-row"><span style="width:9rem;">Share of volume</span><div class="bar-track"><div class="bar-fill fill-cyan" style="width:83%;"></div></div><span class="num">83%</span></div>
+      <div class="bar-row"><span style="width:9rem;">Share of value</span><div class="bar-track"><div class="bar-fill fill-red" style="width:7.28%;"></div></div><span class="num">7.3%</span></div>
+      <p class="src" style="margin-top:.75rem;">Bangladesh Bank data reported by New Age (Oct-month figures). System-wide, non-digital channels &mdash; cash, cheques, over-the-counter banking &mdash; still made up ~62&ndash;68% of total transaction value.</p>
+    </div>
+    <p class="quote small" style="margin-top:1.25rem;">MFS cash transactions (cash-in/cash-out) that month totalled Tk 84,754 crore &mdash; against just Tk 1.09 lakh crore in genuinely digital MFS payments. The "digital economy" headline is mostly people converting cash to wallet and back.</p>
+  </div>
+</section>
+
+<section class="sec-a">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:.6rem;">04 &middot; The tax on the poor</p>
+    <h2 style="font-size:1.6rem;margin-bottom:.9rem;">Cashing out costs 7&ndash;16&times; more than it should</h2>
+    <p class="muted small" style="max-width:640px;margin-bottom:1.5rem;">Transparency International Bangladesh compared the cost of withdrawing Tk 25,000 through MFS versus a bank. The gap falls hardest on the low-income, largely rural users MFS was built to serve.</p>
+    <div class="card">
+      <div class="bar-row"><span>Bank</span><div class="bar-track"><div class="bar-fill fill-cyan" style="width:6%;"></div></div><span class="num">Tk 29</span></div>
+      <div class="bar-row"><span>MFS</span><div class="bar-track"><div class="bar-fill fill-red" style="width:100%;"></div></div><span class="num">Tk 200&ndash;462</span></div>
+      <p class="src" style="margin-top:.75rem;">Cost to withdraw Tk 25,000. Source: Transparency International Bangladesh (TIB), cited via ResearchGate discussion of TIB reporting.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec-b">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:.6rem;">05 &middot; What's coming</p>
+    <h2 style="font-size:1.6rem;margin-bottom:.9rem;">Bangladesh Bank is about to commoditize the wallet layer</h2>
+    <p class="muted small" style="max-width:640px;margin-bottom:1rem;">Bangladesh Bank began building the <strong>Interoperable Instant Payment System (IIPS)</strong> in 2025 &mdash; a single rail connecting banks, MFS providers, and fintechs in real time. Today, moving money between bKash and Nagad, or between a wallet and a bank, is friction by design. That friction is what protects the duopoly's fee structure.</p>
+    <p class="muted small" style="max-width:640px;">Once wallets are interoperable, switching costs collapse. The two incumbents stop competing on "does your money move" and start competing on merchant acceptance, agent trust, and service &mdash; the same commercial battlefield as any other retail distribution business.</p>
+  </div>
+</section>
+
+<section class="sec-a">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:.6rem;">06 &middot; Where this is going</p>
+    <h2 style="font-size:1.6rem;margin-bottom:1.1rem;">The next fight isn't in the app. It's in the agent network and the merchant till.</h2>
+    <div class="grid3">
+      <div class="card">
+        <p class="tag" style="margin-bottom:.6rem;">01</p>
+        <p class="small" style="color:#e2e8f0;font-weight:600;margin-bottom:.4rem;">Interoperability erodes the wallet moat</p>
+        <p class="tiny muted">When IIPS lands, "which wallet do you have" stops being the question. Whoever wins post-IIPS wins on distribution and service quality, not on network lock-in.</p>
+      </div>
+      <div class="card">
+        <p class="tag" style="margin-bottom:.6rem;">02</p>
+        <p class="small" style="color:#e2e8f0;font-weight:600;margin-bottom:.4rem;">Merchant payments are the underbuilt layer</p>
+        <p class="tiny muted">Only a sliver of MFS value is genuine digital commerce today. The provider that builds real merchant acceptance &mdash; not just P2P and cash-out &mdash; owns the next growth curve.</p>
+      </div>
+      <div class="card">
+        <p class="tag" style="margin-bottom:.6rem;">03</p>
+        <p class="small" style="color:#e2e8f0;font-weight:600;margin-bottom:.4rem;">This is a channel-management problem, not a UX problem</p>
+        <p class="tiny muted">1.83M agents is a dealer network with a fintech license. Winning it looks like BSRM's dealer-territory discipline, not another app redesign &mdash; and that's a commercial skill set, not a product one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-b">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:.6rem;">Sources</p>
+    <ul class="plain small muted" style="line-height:1.9;">
+      <li>IMF Financial Access Survey, MFS transaction value 2020&ndash;2024 &mdash; via FRED (fred.stlouisfed.org/series/BGDFCMTVXDC)</li>
+      <li>Transparency International Bangladesh, "Governance Challenges in Mobile Financial Services Sector in Bangladesh" &mdash; accounts, agents, fee comparison (ti-bangladesh.org)</li>
+      <li>The Daily Star, "Tk 6,000cr moves daily. But not every wallet is winning," 29 Jul 2026 &mdash; active users, daily volume, Nagad Q1 2026 figures</li>
+      <li>New Age, "MFS growth fails to dethrone cash" &mdash; volume vs. value split, digital vs. non-digital transaction share</li>
+      <li>The Fintech Times, "South Asian Nation of Bangladesh's Fintech Ecosystem in 2026" &mdash; IIPS, licensed provider count</li>
+    </ul>
+    <p class="tiny muted2" style="margin-top:1rem;">Figures reflect the most recent publicly available data as of September 2026 and are dated by source above; several are drawn from different reference periods (annual, quarterly, and single-month snapshots) and are presented as illustrative of current market structure, not a single point-in-time snapshot.</p>
+  </div>
+</section>
+
+<footer class="sec-a">
+  <div class="wrap" style="text-align:center;">
+    <h3 style="font-size:1.4rem;margin-bottom:.6rem;">Building or hiring into Bangladesh fintech distribution?</h3>
+    <p class="muted small" style="max-width:480px;margin:0 auto 1.5rem;">14 years running B2B distribution and dealer networks at BSRM and BD/seller-onboarding at Daraz &mdash; the same discipline this market's next phase needs.</p>
+    <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;">
+      <a class="btn btn-gold" href="mailto:sadman.shuvo@yahoo.com">Email me</a>
+      <a class="btn btn-outline" href="https://linkedin.com/in/sadman-rayan-shuvo-sales-bd" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+      <a class="btn btn-outline" href="index.html">Back to portfolio</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
